@@ -436,6 +436,34 @@ export default defineComponent({
     "1 Empty or Crafted Modifier": "1個空詞綴或是工藝詞綴",
     "Select only if item has 6 modifiers (1 of which is crafted) or if it has 5 modifiers": "當物品有6個詞綴(其中1個是工藝詞綴)，或是5個詞綴才選取",
     "First ask yourself: would you buy an item with this stat?": "你會買有這樣屬性的物品嗎？"
+  },
+  "ko": {
+    "Q {0}%": "Q {0}%",
+    "DPS: #": "DPS: #",
+    "Elemental DPS: #": "원소 DPS: #",
+    "Physical DPS: #": "물리 DPS: #",
+    "Attacks per Second: #": "초당 공격 횟수: #",
+    "Critical Strike Chance: #%": "치명타 확률: #%",
+    "Armour: #": "방어도: #",
+    "Evasion Rating: #": "회피: #",
+    "Energy Shield: #": "에너지 보호막: #",
+    "Ward: #": "수호: #",
+    "Block: #%": "막기 확률: #%",
+    "variant": "variant",
+    "corrupted": "타락",
+    "synthesised": "결합된",
+    "eldritch": "섬뜩한",
+    "pseudo": "유사 (pseudo)",
+    "Roll is not variable": "Roll is not variable",
+    "Elemental damage is not the main source of DPS": "Elemental damage is not the main source of DPS",
+    "Physical damage is not the main source of DPS": "Physical damage is not the main source of DPS",
+    "Filtering by exact Elemental Resistance unreasonably increases the price": "Filtering by exact Elemental Resistance unreasonably increases the price",
+    "Crafted Chaos Resistance without Explicit mod has no value": "Crafted Chaos Resistance without Explicit mod has no value",
+    "Buyer will likely change anointment": "Buyer will likely change anointment",
+    "Select only if price-checking as base item for crafting": "Select only if price-checking as base item for crafting",
+    "1 Empty or Crafted Modifier": "1 Empty or Crafted Modifier",
+    "Select only if item has 6 modifiers (1 of which is crafted) or if it has 5 modifiers": "Select only if item has 6 modifiers (1 of which is crafted) or if it has 5 modifiers",
+    "First ask yourself: would you buy an item with this stat?": "First ask yourself: would you buy an item with this stat?"
   }
 }
 </i18n>

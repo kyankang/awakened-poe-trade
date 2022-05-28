@@ -1,0 +1,32 @@
+{
+  
+    "Add": "Add",
+    "Retry": "Retry",
+    "Offline": "Offline",
+    "Online": "Online",
+    "You": "You",
+    "Browser": "Browser",
+    "Search": "Search",
+    "min": "min",
+    "max": " max",
+    "Restart required": "Restart required",
+    "Save": "Save",
+    "Cancel": "Cancel",
+    "Enabled": "Enabled",
+    "Disabled": "Disabled",
+    "No": "No",
+    "Yes": "Yes",
+    "Remove": "Remove",
+    "implicit": "implicit",
+    "explicit": "explicit",
+    "enchant": "enchant",
+    "crafted": "crafted",
+    "fractured": "fractured",
+    "scourge": "scourge",
+    "Not recognized modifier": "Not recognized modifier",
+    "Refresh": "Refresh",
+    "map.mods.heist": "heist",
+    "map.mods.outdated": "outdated",
+    "Support development on": "Support development\u00A0on"
+  
+}

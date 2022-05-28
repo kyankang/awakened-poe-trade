@@ -6,6 +6,7 @@
         <ui-radio v-model="language" value="en">English</ui-radio>
         <ui-radio v-model="language" value="ru">Русский</ui-radio>
         <ui-radio v-model="language" value="cmn-Hant">正體中文</ui-radio>
+        <ui-radio v-model="language" value="ko">한국어</ui-radio>
       </div>
     </div>
     <div class="mb-4" v-if="language === 'cmn-Hant'">
@@ -128,6 +129,6 @@ export default defineComponent({
     "Language": "語言",
     "Realm": "分流",
     "International": "國際"
-  }
+  },
 }
 </i18n>
