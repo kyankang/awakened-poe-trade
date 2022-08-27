@@ -319,6 +319,12 @@ export default defineComponent({
     "edit": "редактировать",
     "move": "переместить",
     "delete": "удалить"
+  },
+  "ko": {
+    "hide": "hide",
+    "edit": "edit",
+    "move": "move",
+    "delete": "delete"
   }
 }
 </i18n>

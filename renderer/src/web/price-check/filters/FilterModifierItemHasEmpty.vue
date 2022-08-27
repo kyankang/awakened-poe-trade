@@ -66,6 +66,11 @@ export default defineComponent({
     "Any": "Любое",
     "Prefix": "Префикс",
     "Suffix": "Суффикс"
+  },
+  "ko": {
+    "Any": "모두",
+    "Prefix": "접두어",
+    "Suffix": "접미어"
   }
 }
 </i18n>

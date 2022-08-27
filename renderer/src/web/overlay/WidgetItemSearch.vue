@@ -240,6 +240,15 @@ export default defineComponent({
     "too_many": "Найдено слишком много предметов, уточните название.",
     "not_found": "Не найдено ни одного предмета.",
     "Replicas": "Копии"
+  },
+  "ko": {
+    "Search by name…": "Search by name…",
+    "Reset items": "Reset items",
+    "Heist target:": "Heist target:",
+    "Skill Gem": "Skill Gem",
+    "too_many": "Too many items found, enter the name more precisely.",
+    "not_found": "No items found.",
+    "Replicas": "Replicas"
   }
 }
 </i18n>

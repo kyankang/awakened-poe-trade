@@ -263,6 +263,17 @@ export default defineComponent({
     "Listed": "Выставлен",
     "Seller": "Продавец",
     "Trade site request failed": "Запрос к сайту не удался"
+  },
+  "ko": {
+    "Matched:": "검색결과:",
+    "Trade": "거래소",
+    "Price": "Price",
+    "bulk": "bulk",
+    "Stock": "Stock",
+    "Fulfill": "Fulfill",
+    "Listed": "Age",
+    "Seller": "Seller",
+    "Trade site request failed": "거래소 검색 실패"
   }
 }
 </i18n>

@@ -70,6 +70,10 @@ export default defineComponent({
   "ru": {
     "You have": "В наличии",
     "Stack": "Стак"
+  },
+  "ko": {
+    "You have": "주는 것",
+    "Stack": "재고"
   }
 }
 </i18n>

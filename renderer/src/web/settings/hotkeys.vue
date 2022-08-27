@@ -108,6 +108,18 @@ export default defineComponent({
     "Item info": "物品資訊",
     "Stash tab scrolling": "切換倉庫頁",
     "Delve grid": "礦坑網格"
+  },
+  "ko": {
+    "You can clear hotkey by pressing Backspace": "백스페이스 키를 눌러 단축키를 제거할 수 있습니다.",
+    "Price check": "시세 조회",
+    "Auto-hide Mode": "자동 닫기",
+    "Open without auto-hide": "자동 닫기 없이 열기",
+    "Overlay": "게임 내 오버레이",
+    "Open item on wiki": "위키 열기",
+    "Map check": "지도 위험 모드 확인",
+    "Item info": "아이템 정보",
+    "Stash tab scrolling": "휠스크롤 창고 이동",
+    "Delve grid": "광산 지도 격자 보기"
   }
 }
 </i18n>

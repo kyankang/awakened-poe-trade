@@ -70,6 +70,11 @@ export default defineComponent({
     "widget title": "заголовок виджета",
     "search text or regex": "текст или регекс",
     "friendly name": "нормальное название"
+  },
+  "ko": {
+    "widget title": "위젯 타이틀",
+    "search text or regex": "검색 문구 또는 정규식",
+    "friendly name": "friendly name"
   }
 }
 </i18n>

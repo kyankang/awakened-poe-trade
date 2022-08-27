@@ -74,6 +74,16 @@ export default defineComponent({
     "1 Week Ago": "До 1-й недели",
     "2 Weeks Ago": "До 2-х недель",
     "1 Month Ago": "До 1-го месяца"
+  },
+  "ko": {
+    "Offline & Online": "Offline & Online",
+    "In League": "In League",
+    "Listed: Any Time": "Listed: Any Time",
+    "1 Day Ago": "1 Day Ago",
+    "3 Days Ago": "3 Days Ago",
+    "1 Week Ago": "1 Week Ago",
+    "2 Weeks Ago": "2 Weeks Ago",
+    "1 Month Ago": "1 Month Ago"
   }
 }
 </i18n>

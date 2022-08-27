@@ -172,6 +172,9 @@ export default defineComponent({
 {
   "ru": {
     "paused:": "остановлен"
+  },
+  "ko": {
+    "paused:": "paused"
   }
 }
 </i18n>

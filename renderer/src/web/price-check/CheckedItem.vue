@@ -241,6 +241,9 @@ export default defineComponent({
 {
   "ru": {
     "This tool relies on {0} and {1}, consider support them as well": "Это приложение полагается на сайт {1}, можете поддержать и его"
+  },
+  "ko": {
+    "This tool relies on {0} and {1}, consider support them as well": "이 앱은 {0} 및 {1} 의 후원으로 운영이 됩니다."
   }
 }
 </i18n>

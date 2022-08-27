@@ -70,6 +70,9 @@ export default defineComponent({
 {
   "ru": {
     "Not Set": "Не назначено"
+  },
+  "ko": {
+    "Not Set": "미지정"
   }
 }
 </i18n>

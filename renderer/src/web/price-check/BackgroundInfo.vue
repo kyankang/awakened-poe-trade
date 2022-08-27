@@ -61,6 +61,14 @@ export default defineComponent({
     "Loading leagues...": "Загрузка лиг...",
     "Failed to load leagues": "Не удалось загрузить лиги",
     "leagues_failed": "Убедитесь, что сервера не находятся на обслуживании. Попробуйте нажать на кнопку \"Браузер\", возможно, там будет CAPTCHA."
+  },
+  "ko": {
+    "Update available: {0}": "업데이트 가능: {0}",
+    "It will be installed automatically on exit": "종료후 자동설치를 합니다.",
+    "You can download it from GitHub": "GitHub에서 다운로드할 수 있습니다.",
+    "Loading leagues...": "리그 로딩중...",
+    "Failed to load leagues": "리그 로딩 실패",
+    "leagues_failed": "해당 리그가 PC 플랫폼에서(realm) 지원하는지, 브라우저에서 확인하십시오."
   }
 }
 </i18n>

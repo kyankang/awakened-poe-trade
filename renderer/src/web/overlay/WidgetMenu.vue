@@ -95,6 +95,13 @@ export default defineComponent({
     "Image strip": "Лента изображений",
     "Show button for active widgets": "Показывать кнопку для активных виджетов",
     "add widget": "добавить виджет"
+  },
+  "ko": {
+    "Stopwatch": "스탑워치",
+    "Stash search": "창고 검색",
+    "Image strip": "이미지 위젯 추가",
+    "Show button for active widgets": "모든 위젯 보기",
+    "add widget": "위젯 추가"
   }
 }
 </i18n>

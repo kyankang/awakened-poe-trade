@@ -148,6 +148,18 @@ export default defineComponent({
     "Quality:": "品質:",
     "Level:": "等級:",
     "Charge:": "充能:"
+  },
+  "ko": {
+    "Item Level:": "아이템 레벨:",
+    "Stock:": "재고:",
+    "Map Tier:": "지도 등급:",
+    "Area Level:": "지역 레벨:",
+    "Wings Revealed:": "Wings Revealed:",
+    "Links:": "링크:",
+    "White:": "하얀 홈:",
+    "Quality:": "퀄리티:",
+    "Level:": "레벨:",
+    "Charge:": "Charge:"
   }
 }
 </i18n>

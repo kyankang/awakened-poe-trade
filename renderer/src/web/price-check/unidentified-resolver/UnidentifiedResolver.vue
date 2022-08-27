@@ -80,6 +80,9 @@ export default defineComponent({
 {
   "ru": {
     "You are trying to price check unidentified Unique item with base type \"{0}\". Which one?": "Вы пытаетесь сделать прайс-чек неопознанного Уникального предмета с базой \"{0}\". Какого именно?"
+  },
+  "ko": {
+    "You are trying to price check unidentified Unique item with base type \"{0}\". Which one?": "You are trying to price check unidentified Unique item with base type \"{0}\". Which one?"
   }
 }
 </i18n>

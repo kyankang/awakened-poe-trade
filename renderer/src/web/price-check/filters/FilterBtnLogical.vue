@@ -114,6 +114,27 @@ export default defineComponent({
     "Anomalous": "異常",
     "Divergent": "相異",
     "Phantasmal": "幻影"
+  },
+  "ko": {
+    "Unidentified": "Unidentified",
+    "Veiled": "Veiled",
+    "Blighted": "Blighted",
+    "Blight-ravaged": "Blight-ravaged",
+    "Mirrored": "Mirrored",
+    "Not Mirrored": "Not Mirrored",
+    "Relic Unique": "Relic Unique",
+
+    "Shaper": "Shaper",
+    "Elder": "Elder",
+    "Crusader": "Crusader",
+    "Hunter": "Hunter",
+    "Redeemer": "Redeemer",
+    "Warlord": "Warlord",
+
+    "Superior": "Superior",
+    "Anomalous": "Anomalous",
+    "Divergent": "Divergent",
+    "Phantasmal": "Phantasmal"
   }
 }
 </i18n>

@@ -126,6 +126,15 @@ export default defineComponent({
     "scourge": "Преображённое",
     "Tier: {0}": "Уровень: {0}",
     "Rank: {0}": "Ранг: {0}"
+  },
+  "ko": {
+    "implicit": "고유 속성",
+    "fractured": "분열됨",
+    "explicit": "추가 속성",
+    "crafted": "제작된",
+    "scourge": "스컬지",
+    "Tier: {0}": "등급: {0}",
+    "Rank: {0}": "랭크: {0}"
   }
 }
 </i18n>

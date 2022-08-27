@@ -209,6 +209,17 @@ export default defineComponent({
 
     "Pseudo": "偽屬性",
     "Base item": "物品基底"
+  },
+  "ko": {
+    "Hidden": "세부 옵션 보기",
+    "Collapse": "펼치기",
+    "Stats ignored": "Stats ignored",
+    "{0} of {1}, stats": "{0}/{1} 옵션",
+    "Mods": "모드",
+    "No relevant stats were found": "No relevant stats were found",
+
+    "Pseudo": "유사 (pseudo)",
+    "Base item": "Base item"
   }
 }
 </i18n>

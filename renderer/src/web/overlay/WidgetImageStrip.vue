@@ -104,6 +104,10 @@ export default defineComponent({
   "ru": {
     "widget title": "заголовок виджета",
     "Choose File": "Выберите файл"
+  },
+  "ko": {
+    "widget title": "위젯 타이틀",
+    "Choose File": "파일 선택"
   }
 }
 </i18n>

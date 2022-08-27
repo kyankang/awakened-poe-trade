@@ -50,6 +50,10 @@ export default defineComponent({
   "ru": {
     "Add command": "Добавить команду",
     "press Enter": "нажимать Enter"
+  },
+  "ko": {
+    "Add command": "신규 단축키 추가",
+    "press Enter": "사용 여부"
   }
 }
 </i18n>

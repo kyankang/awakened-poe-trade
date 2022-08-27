@@ -73,6 +73,9 @@ export default defineComponent({
 {
   "ru": {
     "Is ready and running in background": "Запущен и работает в фоновом режиме"
+  },
+  "ko": {
+    "Is ready and running in background": "앱은 백그라운드로 동작합니다."
   }
 }
 </i18n>

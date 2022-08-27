@@ -39,6 +39,10 @@ export default defineComponent({
   "ru": {
     "Start and Pause": "Старт и пауза",
     "Reset": "Сброс"
+  },
+  "ko": {
+    "Start and Pause": "Start and Pause",
+    "Reset": "Reset"
   }
 }
 </i18n>

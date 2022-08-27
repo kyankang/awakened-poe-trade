@@ -79,6 +79,9 @@ export default defineComponent({
   },
   "cmn-Hant": {
     "Tier {0}": "階層 {0}"
+  },
+  "ko": {
+    "Tier {0}": "등급 {0}"
   }
 }
 </i18n>

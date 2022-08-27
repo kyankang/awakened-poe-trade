@@ -60,6 +60,13 @@ export default defineComponent({
     "Disabled (render on CPU)": "Отключено (рендерить на CPU)",
     "PoE window title": "Заголовок окна игры",
     "Restore clipboard": "Восстанавливать буфер обмена"
+  },
+  "ko": {
+    "Log level": "로그 레벨",
+    "Hardware Acceleration": "하드웨어 가속 사용",
+    "Disabled (render on CPU)": "사용안함 (CPU 로 렌더링)",
+    "PoE window title": "PoE 윈도우 타이틀",
+    "Restore clipboard": "클립보드 복구 (Chat 명령어 / 창고 검색용)"
   }
 }
 </i18n>

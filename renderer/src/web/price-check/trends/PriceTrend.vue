@@ -171,6 +171,12 @@ function deltaFromGraph (graphPoints: Array<number | null>) {
     "Last 7 days": "За неделю",
     "Getting price": "Получение цены",
     "from poe.ninja ...": "с poe.ninja ..."
+  },
+  "ko": {
+    "Base item": "Base item",
+    "Last 7 days": "7일전",
+    "Getting price": "Getting price",
+    "from poe.ninja ...": "from poe.ninja ..."
   }
 }
 </i18n>

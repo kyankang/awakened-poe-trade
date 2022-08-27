@@ -130,5 +130,18 @@ export default defineComponent({
     "Realm": "分流",
     "International": "國際"
   },
+  "ko": {
+    "Font size": "폰트 크기",
+    "Background, when APT window is clickable": "배경 색상",
+    "Transparent": "투명 효과",
+    "Show for Overlay and Price Check": "오버레이 + 시세조회에 배경 색상 적용",
+    "Show only for Overlay": "오버레이에만 배경 색상 적용",
+    "Clicking on background focuses game": "게임 내 클릭 시 오버레이 자동 숨김",
+    "Language": "언어 설정",
+    "PoE log file": "PoE log 파일",
+    "PoE config file": "PoE config 파일",
+    "Browse": "...",
+    "Auto-download updates": "자동 업데이트"
+  }
 }
 </i18n>

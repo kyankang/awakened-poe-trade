@@ -254,6 +254,13 @@ export default defineComponent({
     "parse_error": "Произошла ошибка при парсинге предмета",
     "parse_error_msg": "Скорее всего, это ошибка, и вы можете сообщить о ней на GitHub.",
     "Press {0} to switch between browser and game.": "Нажмите {0} для перехода между браузером/игрой."
+  },
+  "ko": {
+    "unknown_item": "Unknown Item",
+    "unknown_item_msg": "If this Item was introduced in this League, it will likely be supported in the next app update.",
+    "parse_error": "An error occurred while parsing the item",
+    "parse_error_msg": "This is probably a bug and you can report it on GitHub.",
+    "Press {0} to switch between browser and game.": "브라우저와 게임 간 전환하려면 {0}를 누르세요."
   }
 }
 </i18n>

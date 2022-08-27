@@ -136,6 +136,11 @@ export default defineComponent({
     "Only selected": "Только выбранные",
     "Stat (found: {0})": "Свойства (найдено: {0})",
     "Show icon for new mods": "Иконка у новых модов"
+  },
+  "ko": {
+    "Only selected": "선택 옵션만 표시",
+    "Stat (found: {0})": "옵션 (찾음: {0})",
+    "Show icon for new mods": "신규 모드의 아이콘 표시"
   }
 }
 </i18n>

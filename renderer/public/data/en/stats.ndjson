@@ -1,61 +1,61 @@
 {"ref":"# Added Passive Skills are Jewel Sockets","better":1,"matchers":[{"string":"# Added Passive Skills are Jewel Sockets"},{"string":"1 Added Passive Skill is a Jewel Socket","value":1}],"trade":{"ids":{"explicit":["explicit.stat_4079888060"],"enchant":["enchant.stat_4079888060"]}}}
 {"ref":"# Cold Damage taken per second per Frenzy Charge while moving","better":1,"matchers":[{"string":"# Cold Damage taken per second per Frenzy Charge while moving"}],"trade":{"ids":{"explicit":["explicit.stat_1528823952"]}}}
-{"ref":"# Crafted Modifiers","better":1,"matchers":[{"string":"# Crafted Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_mods"]}}}
-{"ref":"# Crafted Prefix Modifiers","better":1,"matchers":[{"string":"# Crafted Prefix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_prefix_mods"]}}}
-{"ref":"# Crafted Suffix Modifiers","better":1,"matchers":[{"string":"# Crafted Suffix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_suffix_mods"]}}}
+{"ref":"# Crafted Modifiers","better":1,"matchers":[{"string":"# Crafted Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_mods"]}}}
+{"ref":"# Crafted Prefix Modifiers","better":1,"matchers":[{"string":"# Crafted Prefix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_prefix_mods"]}}}
+{"ref":"# Crafted Suffix Modifiers","better":1,"matchers":[{"string":"# Crafted Suffix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_crafted_suffix_mods"]}}}
 {"ref":"# Dexterity per 1 Dexterity on Allocated Passives in Radius","better":1,"matchers":[{"string":"# Dexterity per 1 Dexterity on Allocated Passives in Radius"}],"trade":{"ids":{"explicit":["explicit.stat_172076472"]}}}
-{"ref":"# Empty Modifiers","better":1,"matchers":[{"string":"# Empty Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_affix_mods"]}}}
-{"ref":"# Empty Prefix Modifiers","better":1,"matchers":[{"string":"# Empty Prefix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_prefix_mods"]}}}
-{"ref":"# Empty Suffix Modifiers","better":1,"matchers":[{"string":"# Empty Suffix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_suffix_mods"]}}}
-{"ref":"# Enchant Modifiers","better":1,"matchers":[{"string":"# Enchant Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_enchant_mods"]}}}
+{"ref":"# Empty Modifiers","better":1,"matchers":[{"string":"# Empty Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_affix_mods"]}}}
+{"ref":"# Empty Prefix Modifiers","better":1,"matchers":[{"string":"# Empty Prefix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_prefix_mods"]}}}
+{"ref":"# Empty Suffix Modifiers","better":1,"matchers":[{"string":"# Empty Suffix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_empty_suffix_mods"]}}}
+{"ref":"# Enchant Modifiers","better":1,"matchers":[{"string":"# Enchant Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_enchant_mods"]}}}
 {"ref":"# Fire Damage taken per second per Endurance Charge if you've been Hit Recently","better":1,"matchers":[{"string":"# Fire Damage taken per second per Endurance Charge if you've been Hit Recently"}],"trade":{"ids":{"explicit":["explicit.stat_1920234902"]}}}
 {"ref":"# Flask Charges recovered every 3 seconds","dp":true,"better":1,"matchers":[{"string":"# Flask Charges recovered every 3 seconds"}],"trade":{"ids":{"explicit":["explicit.stat_3228973398"]}}}
-{"ref":"# Fractured Modifiers","better":1,"matchers":[{"string":"# Fractured Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_fractured_mods"]}}}
-{"ref":"# Implicit Modifiers","better":1,"matchers":[{"string":"# Implicit Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_implicit_mods"]}}}
-{"ref":"# Incubator Kills (Abyssal)","better":1,"matchers":[{"string":"# Incubator Kills (Abyssal) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_abyssal_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Blighted)","better":1,"matchers":[{"string":"# Incubator Kills (Blighted) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_blighted_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Cartographer's)","better":1,"matchers":[{"string":"# Incubator Kills (Cartographer's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_cartographers_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Celestial Armoursmith's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Armoursmith's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_armoursmiths_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Celestial Blacksmith's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Blacksmith's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_blacksmiths_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Celestial Jeweller's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Jeweller's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_jewellers_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Decadent)","better":1,"matchers":[{"string":"# Incubator Kills (Decadent) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_decadent_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Diviner's)","better":1,"matchers":[{"string":"# Incubator Kills (Diviner's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_diviners_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Eldritch)","better":1,"matchers":[{"string":"# Incubator Kills (Eldritch) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_eldritch_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Enchanted)","better":1,"matchers":[{"string":"# Incubator Kills (Enchanted) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_enchanted_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Feral)","better":1,"matchers":[{"string":"# Incubator Kills (Feral) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_feral_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Fine)","better":1,"matchers":[{"string":"# Incubator Kills (Fine) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fine_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Foreboding)","better":1,"matchers":[{"string":"# Incubator Kills (Foreboding) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_foreboding_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Fossilised)","better":1,"matchers":[{"string":"# Incubator Kills (Fossilised) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fossilised_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Fragmented)","better":1,"matchers":[{"string":"# Incubator Kills (Fragmented) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fragmented_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Gemcutter's)","better":1,"matchers":[{"string":"# Incubator Kills (Gemcutter's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_gemcutters_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Geomancer's)","better":1,"matchers":[{"string":"# Incubator Kills (Geomancer's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_geomancers_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Infused)","better":1,"matchers":[{"string":"# Incubator Kills (Infused) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_infused_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Maddening)","better":1,"matchers":[{"string":"# Incubator Kills (Maddening) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_maddening_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Morphing)","better":1,"matchers":[{"string":"# Incubator Kills (Morphing) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_morphing_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Mysterious)","better":1,"matchers":[{"string":"# Incubator Kills (Mysterious) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_mysterious_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Obscured)","better":1,"matchers":[{"string":"# Incubator Kills (Obscured) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_obscured_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Ornate)","better":1,"matchers":[{"string":"# Incubator Kills (Ornate) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_ornate_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Otherwordly)","better":1,"matchers":[{"string":"# Incubator Kills (Otherwordly) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_otherworldly_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Primal)","better":1,"matchers":[{"string":"# Incubator Kills (Primal) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_primal_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Singular)","better":1,"matchers":[{"string":"# Incubator Kills (Singular) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_singular_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Skittering)","better":1,"matchers":[{"string":"# Incubator Kills (Skittering) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_skittering_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Thaumaturge's)","better":1,"matchers":[{"string":"# Incubator Kills (Thaumaturge's) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_thaumaturges_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Time-Lost)","better":1,"matchers":[{"string":"# Incubator Kills (Time-Lost) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_timelost_incubator_kills"]}}}
-{"ref":"# Incubator Kills (Whispering)","better":1,"matchers":[{"string":"# Incubator Kills (Whispering) "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_whispering_incubator_kills"]}}}
+{"ref":"# Fractured Modifiers","better":1,"matchers":[{"string":"# Fractured Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_fractured_mods"]}}}
+{"ref":"# Implicit Modifiers","better":1,"matchers":[{"string":"# Implicit Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_implicit_mods"]}}}
+{"ref":"# Incubator Kills (Abyssal)","better":1,"matchers":[{"string":"# Incubator Kills (Abyssal)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_abyssal_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Blighted)","better":1,"matchers":[{"string":"# Incubator Kills (Blighted)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_blighted_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Cartographer's)","better":1,"matchers":[{"string":"# Incubator Kills (Cartographer's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_cartographers_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Celestial Armoursmith's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Armoursmith's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_armoursmiths_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Celestial Blacksmith's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Blacksmith's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_blacksmiths_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Celestial Jeweller's)","better":1,"matchers":[{"string":"# Incubator Kills (Celestial Jeweller's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_celestial_jewellers_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Decadent)","better":1,"matchers":[{"string":"# Incubator Kills (Decadent)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_decadent_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Diviner's)","better":1,"matchers":[{"string":"# Incubator Kills (Diviner's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_diviners_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Eldritch)","better":1,"matchers":[{"string":"# Incubator Kills (Eldritch)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_eldritch_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Enchanted)","better":1,"matchers":[{"string":"# Incubator Kills (Enchanted)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_enchanted_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Feral)","better":1,"matchers":[{"string":"# Incubator Kills (Feral)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_feral_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Fine)","better":1,"matchers":[{"string":"# Incubator Kills (Fine)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fine_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Foreboding)","better":1,"matchers":[{"string":"# Incubator Kills (Foreboding)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_foreboding_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Fossilised)","better":1,"matchers":[{"string":"# Incubator Kills (Fossilised)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fossilised_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Fragmented)","better":1,"matchers":[{"string":"# Incubator Kills (Fragmented)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_fragmented_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Gemcutter's)","better":1,"matchers":[{"string":"# Incubator Kills (Gemcutter's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_gemcutters_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Geomancer's)","better":1,"matchers":[{"string":"# Incubator Kills (Geomancer's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_geomancers_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Infused)","better":1,"matchers":[{"string":"# Incubator Kills (Infused)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_infused_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Maddening)","better":1,"matchers":[{"string":"# Incubator Kills (Maddening)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_maddening_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Morphing)","better":1,"matchers":[{"string":"# Incubator Kills (Morphing)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_morphing_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Mysterious)","better":1,"matchers":[{"string":"# Incubator Kills (Mysterious)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_mysterious_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Obscured)","better":1,"matchers":[{"string":"# Incubator Kills (Obscured)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_obscured_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Ornate)","better":1,"matchers":[{"string":"# Incubator Kills (Ornate)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_ornate_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Otherwordly)","better":1,"matchers":[{"string":"# Incubator Kills (Otherwordly)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_otherworldly_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Primal)","better":1,"matchers":[{"string":"# Incubator Kills (Primal)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_primal_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Singular)","better":1,"matchers":[{"string":"# Incubator Kills (Singular)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_singular_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Skittering)","better":1,"matchers":[{"string":"# Incubator Kills (Skittering)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_skittering_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Thaumaturge's)","better":1,"matchers":[{"string":"# Incubator Kills (Thaumaturge's)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_thaumaturges_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Time-Lost)","better":1,"matchers":[{"string":"# Incubator Kills (Time-Lost)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_timelost_incubator_kills"]}}}
+{"ref":"# Incubator Kills (Whispering)","better":1,"matchers":[{"string":"# Incubator Kills (Whispering)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_whispering_incubator_kills"]}}}
 {"ref":"# Intelligence per 1 Intelligence on Allocated Passives in Radius","better":1,"matchers":[{"string":"# Intelligence per 1 Intelligence on Allocated Passives in Radius"}],"trade":{"ids":{"explicit":["explicit.stat_1070347065"]}}}
 {"ref":"# Life gained on Kill per Frenzy Charge","better":1,"matchers":[{"string":"# Life gained on Kill per Frenzy Charge"}],"trade":{"ids":{"explicit":["explicit.stat_1269609669"]}}}
 {"ref":"# Life gained when you Block","better":1,"matchers":[{"string":"# Life gained when you Block"},{"string":"Lose # Life when you Block","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_762600725"],"implicit":["implicit.stat_762600725"],"fractured":["fractured.stat_762600725"],"scourge":["scourge.stat_762600725"]}}}
-{"ref":"# Life Regenerated per Second","better":1,"matchers":[{"string":"# Life Regenerated per Second "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_life_regen"]}}}
+{"ref":"# Life Regenerated per Second","better":1,"matchers":[{"string":"# Life Regenerated per Second"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_life_regen"]}}}
 {"ref":"# Life Regenerated per Second while in Blood Stance","better":1,"matchers":[{"string":"# Life Regenerated per Second while in Blood Stance"}],"trade":{"ids":{"explicit":["explicit.stat_550848224"]}}}
 {"ref":"# Lightning Damage taken per second per Power Charge if\nyour Skills have dealt a Critical Strike Recently","better":1,"matchers":[{"string":"# Lightning Damage taken per second per Power Charge if\nyour Skills have dealt a Critical Strike Recently"}],"trade":{"ids":{"explicit":["explicit.stat_1964333391"]}}}
 {"ref":"# Mana gained when you Block","better":1,"matchers":[{"string":"# Mana gained when you Block"},{"string":"Lose # Mana when you Block","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_2122183138"],"implicit":["implicit.stat_2122183138"],"fractured":["fractured.stat_2122183138"],"scourge":["scourge.stat_2122183138"]}}}
 {"ref":"# Maximum Void Charges","better":1,"matchers":[{"string":"# Maximum Void Charges"}],"trade":{"ids":{"explicit":["explicit.stat_1209237645"]}}}
-{"ref":"# Modifiers","better":1,"matchers":[{"string":"# Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_affix_mods"]}}}
-{"ref":"# Notable Passive Skills","better":1,"matchers":[{"string":"# Notable Passive Skills "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_notable_passive_skills"]}}}
+{"ref":"# Modifiers","better":1,"matchers":[{"string":"# Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_affix_mods"]}}}
+{"ref":"# Notable Passive Skills","better":1,"matchers":[{"string":"# Notable Passive Skills"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_notable_passive_skills"]}}}
 {"ref":"# Physical Damage taken on Minion Death","better":1,"matchers":[{"string":"# Physical Damage taken on Minion Death"}],"trade":{"ids":{"explicit":["explicit.stat_4176970656"]}}}
-{"ref":"# Prefix Modifiers","better":1,"matchers":[{"string":"# Prefix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_prefix_mods"]}}}
+{"ref":"# Prefix Modifiers","better":1,"matchers":[{"string":"# Prefix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_prefix_mods"]}}}
 {"ref":"# Strength per 1 Strength on Allocated Passives in Radius","better":1,"matchers":[{"string":"# Strength per 1 Strength on Allocated Passives in Radius"}],"trade":{"ids":{"explicit":["explicit.stat_552705983"]}}}
-{"ref":"# Suffix Modifiers","better":1,"matchers":[{"string":"# Suffix Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_suffix_mods"]}}}
+{"ref":"# Suffix Modifiers","better":1,"matchers":[{"string":"# Suffix Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_number_of_suffix_mods"]}}}
 {"ref":"# to # Added Attack Lightning Damage per 200 Accuracy Rating","better":1,"matchers":[{"string":"# to # Added Attack Lightning Damage per 200 Accuracy Rating"}],"trade":{"ids":{"implicit":["implicit.stat_4139229725"]}}}
 {"ref":"# to # Added Chaos Damage with Bow Attacks","better":1,"matchers":[{"string":"# to # Added Chaos Damage with Bow Attacks"}],"trade":{"ids":{"explicit":["explicit.stat_3478075311"],"implicit":["implicit.stat_3478075311"],"fractured":["fractured.stat_3478075311"]}}}
 {"ref":"# to # Added Chaos Damage with Claw Attacks","better":1,"matchers":[{"string":"# to # Added Chaos Damage with Claw Attacks"}],"trade":{"ids":{"explicit":["explicit.stat_4191067677"],"fractured":["fractured.stat_4191067677"]}}}
@@ -116,8 +116,8 @@
 {"ref":"# to # Added Spell Physical Damage while wielding a Two Handed Weapon","better":1,"matchers":[{"string":"# to # Added Spell Physical Damage while wielding a Two Handed Weapon"}],"trade":{"ids":{"explicit":["explicit.stat_2921084940"],"fractured":["fractured.stat_2921084940"]}}}
 {"ref":"# to # Fire Damage per Endurance Charge","better":1,"matchers":[{"string":"# to # Fire Damage per Endurance Charge"}],"trade":{"ids":{"explicit":["explicit.stat_1073447019"]}}}
 {"ref":"# to # Lightning Damage per Power Charge","better":1,"matchers":[{"string":"# to # Lightning Damage per Power Charge"}],"trade":{"ids":{"explicit":["explicit.stat_1917107159"]}}}
-{"ref":"# total Elemental Resistances","better":1,"matchers":[{"string":"# total Elemental Resistances "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_count_elemental_resistances"]}}}
-{"ref":"# total Resistances","better":1,"matchers":[{"string":"# total Resistances "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_count_resistances"]}}}
+{"ref":"# total Elemental Resistances","better":1,"matchers":[{"string":"# total Elemental Resistances"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_count_elemental_resistances"]}}}
+{"ref":"# total Resistances","better":1,"matchers":[{"string":"# total Resistances"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_count_resistances"]}}}
 {"ref":"# uses remaining","better":1,"matchers":[{"string":"# use remaining"},{"string":"# uses remaining"}],"trade":{"ids":{"explicit":["explicit.stat_1479533453"],"enchant":["enchant.stat_290368246"]}}}
 {"ref":"#% additional Elemental Resistances during Flask effect","better":1,"matchers":[{"string":"#% additional Elemental Resistances during Flask effect"}],"trade":{"ids":{"explicit":["explicit.stat_962725504"]}}}
 {"ref":"#% additional Physical Damage Reduction","better":1,"matchers":[{"string":"#% additional Physical Damage Reduction"}],"trade":{"ids":{"explicit":["explicit.stat_3771516363"],"implicit":["implicit.stat_3771516363"],"fractured":["fractured.stat_3771516363"],"crafted":["crafted.stat_3771516363"]}}}
@@ -133,7 +133,7 @@
 {"ref":"#% additional Physical Damage Reduction while Focused","better":1,"matchers":[{"string":"#% additional Physical Damage Reduction while Focused"}],"trade":{"ids":{"explicit":["explicit.stat_3753650187"],"fractured":["fractured.stat_3753650187"],"crafted":["crafted.stat_3753650187"]}}}
 {"ref":"#% additional Physical Damage Reduction while moving","better":1,"matchers":[{"string":"#% additional Physical Damage Reduction while moving"}],"trade":{"ids":{"explicit":["explicit.stat_2713357573"]}}}
 {"ref":"#% additional Physical Damage Reduction while stationary","better":1,"matchers":[{"string":"#% Physical Damage taken while stationary"},{"string":"#% additional Physical Damage Reduction while stationary"}],"trade":{"ids":{"explicit":["explicit.stat_2181129193"],"implicit":["implicit.stat_2181129193"],"fractured":["fractured.stat_2181129193"]}}}
-{"ref":"#% Base Defence Percentile","better":1,"matchers":[{"string":"#% Base Defence Percentile "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_base_defence_percentile"]}}}
+{"ref":"#% Base Defence Percentile","better":1,"matchers":[{"string":"#% Base Defence Percentile"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_base_defence_percentile"]}}}
 {"ref":"#% chance for Amulets to drop as Anointed Talismans instead in your Maps","dp":true,"better":1,"matchers":[{"string":"#% chance for Amulets to drop as Anointed Talismans instead in your Maps"}],"trade":{"ids":{"explicit":["explicit.stat_3897649208"]}}}
 {"ref":"#% chance for Bleeding inflicted with this Weapon to deal 100% more Damage","better":1,"matchers":[{"string":"#% chance for Bleeding inflicted with this Weapon to deal 100% more Damage"}],"trade":{"ids":{"explicit":["explicit.stat_1560880986"],"fractured":["fractured.stat_1560880986"]}}}
 {"ref":"#% chance for Blight Chests to contain an additional Reward","better":1,"matchers":[{"string":"#% chance for Blight Chests to contain an additional Reward"},{"string":"Blight Chests contain an additional Reward","value":100}],"trade":{"ids":{"enchant":["enchant.stat_1260718722"]}}}
@@ -733,7 +733,7 @@
 {"ref":"#% increased Cold Resistance","better":1,"matchers":[{"string":"#% increased Cold Resistance"},{"string":"#% reduced Cold Resistance","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_4252311791"]}}}
 {"ref":"#% increased Cold Snap Area of Effect","better":1,"matchers":[{"string":"#% increased Cold Snap Area of Effect"},{"string":"#% reduced Cold Snap Area of Effect","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_3371538704"]}}}
 {"ref":"#% increased Cold Snap Damage","better":1,"matchers":[{"string":"#% increased Cold Snap Damage"},{"string":"#% reduced Cold Snap Damage","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_3729006707"]}}}
-{"ref":"#% increased Cold Spell Damage","better":1,"matchers":[{"string":"#% increased Cold Spell Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_cold_spell_damage"]}}}
+{"ref":"#% increased Cold Spell Damage","better":1,"matchers":[{"string":"#% increased Cold Spell Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_cold_spell_damage"]}}}
 {"ref":"#% increased Conductivity Curse Effect","better":1,"matchers":[{"string":"#% increased Conductivity Curse Effect"},{"string":"#% reduced Conductivity Curse Effect","negate":true}],"trade":{"ids":{"implicit":["implicit.stat_3395908304"],"enchant":["enchant.stat_3395908304"]}}}
 {"ref":"#% increased Conductivity Duration","better":1,"matchers":[{"string":"#% increased Conductivity Duration"},{"string":"#% reduced Conductivity Duration","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_819890745"]}}}
 {"ref":"#% increased Contagion Area of Effect","better":1,"matchers":[{"string":"#% increased Contagion Area of Effect"},{"string":"#% reduced Contagion Area of Effect","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_1056396846"]}}}
@@ -1053,7 +1053,7 @@
 {"ref":"#% increased Fire Damage with Hits and Ailments against Blinded Enemies","better":1,"matchers":[{"string":"#% increased Fire Damage with Hits and Ailments against Blinded Enemies"},{"string":"#% reduced Fire Damage with Hits and Ailments against Blinded Enemies","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_1601181226"]}}}
 {"ref":"#% increased Fire Damage with Spell Skills","better":1,"matchers":[{"string":"#% increased Fire Damage with Spell Skills"},{"string":"#% reduced Fire Damage with Spell Skills","negate":true}],"trade":{"ids":{"implicit":["implicit.stat_361162316"]}}}
 {"ref":"#% increased Fire Resistance","better":1,"matchers":[{"string":"#% increased Fire Resistance"},{"string":"#% reduced Fire Resistance","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_1680060098"]}}}
-{"ref":"#% increased Fire Spell Damage","better":1,"matchers":[{"string":"#% increased Fire Spell Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_fire_spell_damage"]}}}
+{"ref":"#% increased Fire Spell Damage","better":1,"matchers":[{"string":"#% increased Fire Spell Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_fire_spell_damage"]}}}
 {"ref":"#% increased Fire Trap Burning Damage","better":1,"matchers":[{"string":"#% increased Fire Trap Burning Damage"},{"string":"#% reduced Fire Trap Burning Damage","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_345703394"]}}}
 {"ref":"#% increased Fire Trap Burning Ground Duration","better":1,"matchers":[{"string":"#% increased Fire Trap Burning Ground Duration"},{"string":"#% reduced Fire Trap Burning Ground Duration","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_3279786746"]}}}
 {"ref":"#% increased Fire Trap Damage","better":1,"matchers":[{"string":"#% increased Fire Trap Damage"},{"string":"#% reduced Fire Trap Damage","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_181307038"]}}}
@@ -1197,7 +1197,7 @@
 {"ref":"#% increased Lightning Damage with Attack Skills","better":1,"matchers":[{"string":"#% increased Lightning Damage with Attack Skills"},{"string":"#% reduced Lightning Damage with Attack Skills","negate":true}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_lightning_damage_with_attack_skills"],"explicit":["explicit.stat_4208907162"],"implicit":["implicit.stat_4208907162"]}}}
 {"ref":"#% increased Lightning Damage with Spell Skills","better":1,"matchers":[{"string":"#% increased Lightning Damage with Spell Skills"},{"string":"#% reduced Lightning Damage with Spell Skills","negate":true}],"trade":{"ids":{"implicit":["implicit.stat_3935031607"]}}}
 {"ref":"#% increased Lightning Resistance","better":1,"matchers":[{"string":"#% increased Lightning Resistance"},{"string":"#% reduced Lightning Resistance","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_2249211872"]}}}
-{"ref":"#% increased Lightning Spell Damage","better":1,"matchers":[{"string":"#% increased Lightning Spell Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_lightning_spell_damage"]}}}
+{"ref":"#% increased Lightning Spell Damage","better":1,"matchers":[{"string":"#% increased Lightning Spell Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_lightning_spell_damage"]}}}
 {"ref":"#% increased Lightning Spire Trap Throwing Speed","better":1,"matchers":[{"string":"#% increased Lightning Spire Trap Throwing Speed"},{"string":"#% reduced Lightning Spire Trap Throwing Speed","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_1978232370"]}}}
 {"ref":"#% increased Lightning Strike Damage","better":1,"matchers":[{"string":"#% increased Lightning Strike Damage"},{"string":"#% reduced Lightning Strike Damage","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_3630274354"]}}}
 {"ref":"#% increased Lightning Tendrils Area of Effect","better":1,"matchers":[{"string":"#% increased Lightning Tendrils Area of Effect"},{"string":"#% reduced Lightning Tendrils Area of Effect","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_1230050013"]}}}
@@ -1666,7 +1666,7 @@
 {"ref":"#% of Infernal Blow Physical Damage gained as Extra Fire Damage","better":1,"matchers":[{"string":"#% of Infernal Blow Physical Damage gained as Extra Fire Damage"}],"trade":{"ids":{"enchant":["enchant.stat_2484188706"]}}}
 {"ref":"#% of Life Leech applies to Enemies as Chaos Damage","better":1,"matchers":[{"string":"#% of Life Leech applies to Enemies as Chaos Damage"}],"trade":{"ids":{"explicit":["explicit.stat_768537671"]}}}
 {"ref":"#% of Life Recovery from Flasks is applied to nearby Allies instead of You","better":1,"matchers":[{"string":"#% of Life Recovery from Flasks is applied to nearby Allies instead of You"}],"trade":{"ids":{"explicit":["explicit.stat_2264655303"],"fractured":["fractured.stat_2264655303"]}}}
-{"ref":"#% of Life Regenerated per Second","better":1,"matchers":[{"string":"#% of Life Regenerated per Second "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_percent_life_regen"]}}}
+{"ref":"#% of Life Regenerated per Second","better":1,"matchers":[{"string":"#% of Life Regenerated per Second"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_percent_life_regen"]}}}
 {"ref":"#% of Life Regenerated per Second if you've dealt a Critical Strike in the past 8 seconds","better":1,"matchers":[{"string":"#% of Life Regenerated per Second if you've dealt a Critical Strike in the past 8 seconds"}],"trade":{"ids":{"explicit":["explicit.stat_221532021"]}}}
 {"ref":"#% of Life Regenerated per second per Fragile Regrowth","dp":true,"better":1,"matchers":[{"string":"#% of Life Regenerated per second per Fragile Regrowth"}],"trade":{"ids":{"explicit":["explicit.stat_3175722882"],"fractured":["fractured.stat_3175722882"]}}}
 {"ref":"#% of Lightning Damage Converted to Chaos Damage","better":1,"matchers":[{"string":"#% of Lightning Damage Converted to Chaos Damage"}],"trade":{"ids":{"explicit":["explicit.stat_4238266823"]}}}
@@ -1773,8 +1773,8 @@
 {"ref":"#% reduced Spell Damage taken from Blinded Enemies","better":-1,"matchers":[{"string":"#% increased Spell Damage taken from Blinded Enemies"},{"string":"#% reduced Spell Damage taken from Blinded Enemies","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_1165847826"]},"inverted":true}}
 {"ref":"#% reduced Storm Call Duration","better":-1,"matchers":[{"string":"#% increased Storm Call Duration"},{"string":"#% reduced Storm Call Duration","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_1843506018"]},"inverted":true}}
 {"ref":"#% slower start of Energy Shield Recharge during any Flask Effect","better":-1,"matchers":[{"string":"#% faster start of Energy Shield Recharge during any Flask Effect"},{"string":"#% slower start of Energy Shield Recharge during any Flask Effect","negate":true}],"trade":{"ids":{"explicit":["explicit.stat_1912660783"]},"inverted":true}}
-{"ref":"#% total increased maximum Energy Shield","better":1,"matchers":[{"string":"#% total increased maximum Energy Shield "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_energy_shield"]}}}
-{"ref":"#% total increased Physical Damage","better":1,"matchers":[{"string":"#% total increased Physical Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_physical_damage"]}}}
+{"ref":"#% total increased maximum Energy Shield","better":1,"matchers":[{"string":"#% total increased maximum Energy Shield"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_energy_shield"]}}}
+{"ref":"#% total increased Physical Damage","better":1,"matchers":[{"string":"#% total increased Physical Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_increased_physical_damage"]}}}
 {"ref":"+# Accuracy Rating per 2 Intelligence","better":1,"matchers":[{"string":"# Accuracy Rating per 2 Intelligence"}],"trade":{"ids":{"explicit":["explicit.stat_2196657026"]}}}
 {"ref":"+# Armour if you've Blocked Recently","better":1,"matchers":[{"string":"# Armour if you've Blocked Recently"}],"trade":{"ids":{"explicit":["explicit.stat_4091848539"]}}}
 {"ref":"+# Armour per Summoned Totem","better":1,"matchers":[{"string":"# Armour per Summoned Totem"}],"trade":{"ids":{"explicit":["explicit.stat_1429385513"]}}}
@@ -1959,35 +1959,35 @@
 {"ref":"+# to Trap Disarmament Level for Heists","better":1,"matchers":[{"string":"# to Trap Disarmament Level for Heists"}],"trade":{"ids":{"explicit":["explicit.stat_555061211"]}}}
 {"ref":"+# to Ward","better":1,"matchers":[{"string":"# to Ward"}],"trade":{"ids":{"explicit":["explicit.stat_774059442"],"fractured":["fractured.stat_774059442"]}}}
 {"ref":"+# to Weapon Range","better":1,"matchers":[{"string":"# to Melee Strike Range"},{"string":"# to Weapon Range"}],"trade":{"ids":{"explicit":["explicit.stat_2264295449","explicit.stat_350598685"],"implicit":["implicit.stat_2264295449","implicit.stat_350598685"],"fractured":["fractured.stat_2264295449","fractured.stat_350598685"],"scourge":["scourge.stat_350598685"],"crafted":["crafted.stat_2264295449","crafted.stat_350598685"]}}}
-{"ref":"+# total maximum Energy Shield","better":1,"matchers":[{"string":"+# total maximum Energy Shield "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_energy_shield"]}}}
-{"ref":"+# total maximum Life","better":1,"matchers":[{"string":"+# total maximum Life "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_life"]}}}
-{"ref":"+# total maximum Mana","better":1,"matchers":[{"string":"+# total maximum Mana "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_mana"]}}}
-{"ref":"+# total to all Attributes","better":1,"matchers":[{"string":"+# total to all Attributes "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_all_attributes"]}}}
-{"ref":"+# total to Dexterity","better":1,"matchers":[{"string":"+# total to Dexterity "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_dexterity"]}}}
-{"ref":"+# total to Intelligence","better":1,"matchers":[{"string":"+# total to Intelligence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_intelligence"]}}}
-{"ref":"+# total to Level of Socketed Aura Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Aura Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_aura_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Bow Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Bow Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_bow_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Chaos Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Chaos Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_chaos_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Cold Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Cold Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_cold_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Curse Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Curse Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_curse_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Dexterity Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Dexterity Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_dexterity_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Elemental Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Elemental Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_elemental_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Fire Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Fire Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_fire_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Golem Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Golem Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_golem_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Intelligence Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Intelligence Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_intelligence_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Lightning Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Lightning Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_lightning_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Melee Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Melee Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_melee_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Minion Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Minion Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_minion_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Movement Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Movement Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_movement_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Projectile Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Projectile Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_projectile_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Skill Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Skill Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_skill_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Spell Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Spell Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_spell_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Strength Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Strength Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_strength_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Support Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Support Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_support_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Vaal Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Vaal Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_vaal_gem_levels"]}}}
-{"ref":"+# total to Level of Socketed Warcry Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Warcry Gems "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_warcry_gem_levels"]}}}
-{"ref":"+# total to Strength","better":1,"matchers":[{"string":"+# total to Strength "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_strength"]}}}
+{"ref":"+# total maximum Energy Shield","better":1,"matchers":[{"string":"+# total maximum Energy Shield"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_energy_shield"]}}}
+{"ref":"+# total maximum Life","better":1,"matchers":[{"string":"+# total maximum Life"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_life"]}}}
+{"ref":"+# total maximum Mana","better":1,"matchers":[{"string":"+# total maximum Mana"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_mana"]}}}
+{"ref":"+# total to all Attributes","better":1,"matchers":[{"string":"+# total to all Attributes"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_all_attributes"]}}}
+{"ref":"+# total to Dexterity","better":1,"matchers":[{"string":"+# total to Dexterity"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_dexterity"]}}}
+{"ref":"+# total to Intelligence","better":1,"matchers":[{"string":"+# total to Intelligence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_intelligence"]}}}
+{"ref":"+# total to Level of Socketed Aura Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Aura Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_aura_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Bow Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Bow Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_bow_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Chaos Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Chaos Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_chaos_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Cold Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Cold Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_cold_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Curse Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Curse Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_curse_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Dexterity Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Dexterity Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_dexterity_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Elemental Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Elemental Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_elemental_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Fire Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Fire Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_fire_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Golem Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Golem Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_golem_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Intelligence Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Intelligence Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_intelligence_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Lightning Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Lightning Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_lightning_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Melee Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Melee Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_melee_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Minion Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Minion Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_minion_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Movement Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Movement Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_movement_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Projectile Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Projectile Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_projectile_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Skill Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Skill Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_skill_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Spell Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Spell Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_spell_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Strength Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Strength Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_strength_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Support Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Support Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_support_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Vaal Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Vaal Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_vaal_gem_levels"]}}}
+{"ref":"+# total to Level of Socketed Warcry Gems","better":1,"matchers":[{"string":"+# total to Level of Socketed Warcry Gems"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_additional_warcry_gem_levels"]}}}
+{"ref":"+# total to Strength","better":1,"matchers":[{"string":"+# total to Strength"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_strength"]}}}
 {"ref":"+# Weapon Range per 10% Quality","better":1,"matchers":[{"string":"# Weapon Range per 10% Quality"}],"trade":{"ids":{"enchant":["enchant.stat_2967267655"]}}}
 {"ref":"+#% chance to Avoid Elemental Damage from Hits while Phasing","better":1,"matchers":[{"string":"#% chance to Avoid Elemental Damage from Hits while Phasing"}],"trade":{"ids":{"explicit":["explicit.stat_143510471"]}}}
 {"ref":"+#% chance to Avoid Physical Damage from Hits while Phasing","better":1,"matchers":[{"string":"#% chance to Avoid Physical Damage from Hits while Phasing"}],"trade":{"ids":{"explicit":["explicit.stat_2490633856"]}}}
@@ -2046,8 +2046,8 @@
 {"ref":"+#% Chaos Resistance against Damage Over Time","better":1,"matchers":[{"string":"#% Chaos Resistance against Damage Over Time"}],"trade":{"ids":{"explicit":["explicit.stat_2266636761"],"crafted":["crafted.stat_2266636761"]}}}
 {"ref":"+#% Critical Strike Chance per Power Charge","dp":true,"better":1,"matchers":[{"string":"#% Critical Strike Chance per Power Charge"}],"trade":{"ids":{"explicit":["explicit.stat_1818900806"]}}}
 {"ref":"+#% Critical Strike Multiplier while a Rare or Unique Enemy is Nearby","better":1,"matchers":[{"string":"#% Critical Strike Multiplier while a Rare or Unique Enemy is Nearby"}],"trade":{"ids":{"explicit":["explicit.stat_3992439283"],"fractured":["fractured.stat_3992439283"],"crafted":["crafted.stat_3992439283"]}}}
-{"ref":"+#% Global Critical Strike Chance","better":1,"matchers":[{"string":"+#% Global Critical Strike Chance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_global_critical_strike_chance"]}}}
-{"ref":"+#% Global Critical Strike Multiplier","better":1,"matchers":[{"string":"+#% Global Critical Strike Multiplier "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_global_critical_strike_multiplier"]}}}
+{"ref":"+#% Global Critical Strike Chance","better":1,"matchers":[{"string":"+#% Global Critical Strike Chance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_global_critical_strike_chance"]}}}
+{"ref":"+#% Global Critical Strike Multiplier","better":1,"matchers":[{"string":"+#% Global Critical Strike Multiplier"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_global_critical_strike_multiplier"]}}}
 {"ref":"+#% Global Critical Strike Multiplier while you have a Frenzy Charge","better":1,"matchers":[{"string":"#% Global Critical Strike Multiplier while you have a Frenzy Charge"}],"trade":{"ids":{"explicit":["explicit.stat_3375516056"]}}}
 {"ref":"+#% Global Critical Strike Multiplier while you have no Frenzy Charges","better":1,"matchers":[{"string":"#% Global Critical Strike Multiplier while you have no Frenzy Charges"}],"trade":{"ids":{"explicit":["explicit.stat_3062763405"]}}}
 {"ref":"+#% increased Flame Golem Elemental Resistances","better":1,"matchers":[{"string":"#% increased Flame Golem Elemental Resistances"}],"trade":{"ids":{"enchant":["enchant.stat_1298820272"]}}}
@@ -2062,16 +2062,16 @@
 {"ref":"+#% Player Cold Resistance per 25% Alert Level","better":1,"fromHeistAreaMods":true,"matchers":[{"string":"#% Player Cold Resistance per 25% Alert Level"}],"trade":{"ids":{"explicit":["explicit.stat_2916448124"],"fractured":["fractured.stat_2916448124"]}}}
 {"ref":"+#% Player Fire Resistance per 25% Alert Level","better":1,"fromHeistAreaMods":true,"matchers":[{"string":"#% Player Fire Resistance per 25% Alert Level"}],"trade":{"ids":{"explicit":["explicit.stat_1318683911"]}}}
 {"ref":"+#% Player Lightning Resistance per 25% Alert Level","better":1,"fromHeistAreaMods":true,"matchers":[{"string":"#% Player Lightning Resistance per 25% Alert Level"}],"trade":{"ids":{"explicit":["explicit.stat_3839688967"],"fractured":["fractured.stat_3839688967"]}}}
-{"ref":"+#% Quality to Attack Modifiers","better":1,"matchers":[{"string":"+#% Quality to Attack Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_attack_quality"]}}}
-{"ref":"+#% Quality to Attribute Modifiers","better":1,"matchers":[{"string":"+#% Quality to Attribute Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_attribute_quality"]}}}
-{"ref":"+#% Quality to Caster Modifiers","better":1,"matchers":[{"string":"+#% Quality to Caster Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_caster_quality"]}}}
-{"ref":"+#% Quality to Critical Modifiers","better":1,"matchers":[{"string":"+#% Quality to Critical Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_critical_quality"]}}}
-{"ref":"+#% Quality to Defence Modifiers","better":1,"matchers":[{"string":"+#% Quality to Defence Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_defense_quality"]}}}
-{"ref":"+#% Quality to Elemental Damage Modifiers","better":1,"matchers":[{"string":"+#% Quality to Elemental Damage Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_elemental_quality"]}}}
-{"ref":"+#% Quality to Life and Mana Modifiers","better":1,"matchers":[{"string":"+#% Quality to Life and Mana Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_resource_quality"]}}}
-{"ref":"+#% Quality to Physical and Chaos Damage Modifiers","better":1,"matchers":[{"string":"+#% Quality to Physical and Chaos Damage Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_physical_chaos_quality"]}}}
-{"ref":"+#% Quality to Resistance Modifiers","better":1,"matchers":[{"string":"+#% Quality to Resistance Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_resistance_quality"]}}}
-{"ref":"+#% Quality to Speed Modifiers","better":1,"matchers":[{"string":"+#% Quality to Speed Modifiers "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_speed_quality"]}}}
+{"ref":"+#% Quality to Attack Modifiers","better":1,"matchers":[{"string":"+#% Quality to Attack Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_attack_quality"]}}}
+{"ref":"+#% Quality to Attribute Modifiers","better":1,"matchers":[{"string":"+#% Quality to Attribute Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_attribute_quality"]}}}
+{"ref":"+#% Quality to Caster Modifiers","better":1,"matchers":[{"string":"+#% Quality to Caster Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_caster_quality"]}}}
+{"ref":"+#% Quality to Critical Modifiers","better":1,"matchers":[{"string":"+#% Quality to Critical Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_critical_quality"]}}}
+{"ref":"+#% Quality to Defence Modifiers","better":1,"matchers":[{"string":"+#% Quality to Defence Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_defense_quality"]}}}
+{"ref":"+#% Quality to Elemental Damage Modifiers","better":1,"matchers":[{"string":"+#% Quality to Elemental Damage Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_elemental_quality"]}}}
+{"ref":"+#% Quality to Life and Mana Modifiers","better":1,"matchers":[{"string":"+#% Quality to Life and Mana Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_resource_quality"]}}}
+{"ref":"+#% Quality to Physical and Chaos Damage Modifiers","better":1,"matchers":[{"string":"+#% Quality to Physical and Chaos Damage Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_physical_chaos_quality"]}}}
+{"ref":"+#% Quality to Resistance Modifiers","better":1,"matchers":[{"string":"+#% Quality to Resistance Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_resistance_quality"]}}}
+{"ref":"+#% Quality to Speed Modifiers","better":1,"matchers":[{"string":"+#% Quality to Speed Modifiers"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_jewellery_speed_quality"]}}}
 {"ref":"+#% to all Elemental Resistances","better":1,"matchers":[{"string":"#% to all Elemental Resistances"}],"trade":{"ids":{"explicit":["explicit.stat_2901986750"],"implicit":["implicit.stat_2901986750"],"fractured":["fractured.stat_2901986750"],"scourge":["scourge.stat_2901986750"],"crafted":["crafted.stat_2901986750"]}}}
 {"ref":"+#% to all Elemental Resistances if Corrupted","better":1,"matchers":[{"string":"#% to all Elemental Resistances if Corrupted"}],"trade":{"ids":{"implicit":["implicit.stat_3731630482"]}}}
 {"ref":"+#% to all Elemental Resistances per 10 Devotion","better":1,"matchers":[{"string":"#% to all Elemental Resistances per 10 Devotion"}],"trade":{"ids":{"explicit":["explicit.stat_1910205563"]}}}
@@ -2217,16 +2217,16 @@
 {"ref":"+#% to Spell Critical Strike Chance","dp":true,"better":1,"matchers":[{"string":"#% to Spell Critical Strike Chance"}],"trade":{"ids":{"explicit":["explicit.stat_791835907"],"implicit":["implicit.stat_791835907"]}}}
 {"ref":"+#% to Stone Golem Elemental Resistances","better":1,"matchers":[{"string":"#% to Stone Golem Elemental Resistances"}],"trade":{"ids":{"enchant":["enchant.stat_1601558321"]}}}
 {"ref":"+#% to Unarmed Melee Attack Critical Strike Chance","dp":true,"better":1,"matchers":[{"string":"#% to Unarmed Melee Attack Critical Strike Chance"}],"trade":{"ids":{"explicit":["explicit.stat_3613173483"]}}}
-{"ref":"+#% total Attack Speed","better":1,"matchers":[{"string":"+#% total Attack Speed "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_attack_speed"]}}}
-{"ref":"+#% total Cast Speed","better":1,"matchers":[{"string":"+#% total Cast Speed "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_cast_speed"]}}}
-{"ref":"+#% total Critical Strike Chance for Spells","better":1,"matchers":[{"string":"+#% total Critical Strike Chance for Spells "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_critical_strike_chance_for_spells"]}}}
-{"ref":"+#% total Elemental Resistance","better":1,"matchers":[{"string":"+#% total Elemental Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_elemental_resistance"]}}}
-{"ref":"+#% total Resistance","better":1,"matchers":[{"string":"+#% total Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_resistance"]}}}
-{"ref":"+#% total to all Elemental Resistances","better":1,"matchers":[{"string":"+#% total to all Elemental Resistances "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_all_elemental_resistances"]}}}
-{"ref":"+#% total to Chaos Resistance","better":1,"matchers":[{"string":"+#% total to Chaos Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_chaos_resistance"]}}}
-{"ref":"+#% total to Cold Resistance","better":1,"matchers":[{"string":"+#% total to Cold Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_cold_resistance"]}}}
-{"ref":"+#% total to Fire Resistance","better":1,"matchers":[{"string":"+#% total to Fire Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_fire_resistance"]}}}
-{"ref":"+#% total to Lightning Resistance","better":1,"matchers":[{"string":"+#% total to Lightning Resistance "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_lightning_resistance"]}}}
+{"ref":"+#% total Attack Speed","better":1,"matchers":[{"string":"+#% total Attack Speed"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_attack_speed"]}}}
+{"ref":"+#% total Cast Speed","better":1,"matchers":[{"string":"+#% total Cast Speed"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_cast_speed"]}}}
+{"ref":"+#% total Critical Strike Chance for Spells","better":1,"matchers":[{"string":"+#% total Critical Strike Chance for Spells"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_critical_strike_chance_for_spells"]}}}
+{"ref":"+#% total Elemental Resistance","better":1,"matchers":[{"string":"+#% total Elemental Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_elemental_resistance"]}}}
+{"ref":"+#% total Resistance","better":1,"matchers":[{"string":"+#% total Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_resistance"]}}}
+{"ref":"+#% total to all Elemental Resistances","better":1,"matchers":[{"string":"+#% total to all Elemental Resistances"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_all_elemental_resistances"]}}}
+{"ref":"+#% total to Chaos Resistance","better":1,"matchers":[{"string":"+#% total to Chaos Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_chaos_resistance"]}}}
+{"ref":"+#% total to Cold Resistance","better":1,"matchers":[{"string":"+#% total to Cold Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_cold_resistance"]}}}
+{"ref":"+#% total to Fire Resistance","better":1,"matchers":[{"string":"+#% total to Fire Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_fire_resistance"]}}}
+{"ref":"+#% total to Lightning Resistance","better":1,"matchers":[{"string":"+#% total to Lightning Resistance"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_total_lightning_resistance"]}}}
 {"ref":"+1 to Level of Socketed Active Skill Gems per # Player Levels","better":1,"matchers":[{"string":"+1 to Level of Socketed Active Skill Gems per # Player Levels"}],"trade":{"ids":{"explicit":["explicit.stat_1435838855"]}}}
 {"ref":"+1 to maximum Blade Flurry stages","better":1,"matchers":[{"string":"+1 to maximum Blade Flurry stages"}],"trade":{"ids":{"enchant":["enchant.stat_865345996"]}}}
 {"ref":"+1 to maximum number of Raised Zombies per # Strength","better":1,"matchers":[{"string":"+1 to maximum number of Raised Zombies per # Strength"}],"trade":{"ids":{"explicit":["explicit.stat_4056985119"]}}}
@@ -2620,12 +2620,12 @@
 {"ref":"Adds # to # Cold Damage to Spells while no Life is Reserved","better":1,"matchers":[{"string":"Adds # to # Cold Damage to Spells while no Life is Reserved"}],"trade":{"ids":{"explicit":["explicit.stat_897996059"]}}}
 {"ref":"Adds # to # Cold Damage while affected by Hatred","better":1,"matchers":[{"string":"Adds # to # Cold Damage while affected by Hatred"}],"trade":{"ids":{"explicit":["explicit.stat_2643562209"]}}}
 {"ref":"Adds # to # Cold Damage while you have Avian's Might","better":1,"matchers":[{"string":"Adds # to # Cold Damage while you have Avian's Might"}],"trade":{"ids":{"explicit":["explicit.stat_3485231932"]}}}
-{"ref":"Adds # to # Damage","better":1,"matchers":[{"string":"Adds # to # Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage"]}}}
-{"ref":"Adds # to # Damage to Attacks","better":1,"matchers":[{"string":"Adds # to # Damage to Attacks "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage_to_attacks"]}}}
-{"ref":"Adds # to # Damage to Spells","better":1,"matchers":[{"string":"Adds # to # Damage to Spells "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage_to_spells"]}}}
-{"ref":"Adds # to # Elemental Damage","better":1,"matchers":[{"string":"Adds # to # Elemental Damage "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage"]}}}
-{"ref":"Adds # to # Elemental Damage to Attacks","better":1,"matchers":[{"string":"Adds # to # Elemental Damage to Attacks "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage_to_attacks"]}}}
-{"ref":"Adds # to # Elemental Damage to Spells","better":1,"matchers":[{"string":"Adds # to # Elemental Damage to Spells "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage_to_spells"]}}}
+{"ref":"Adds # to # Damage","better":1,"matchers":[{"string":"Adds # to # Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage"]}}}
+{"ref":"Adds # to # Damage to Attacks","better":1,"matchers":[{"string":"Adds # to # Damage to Attacks"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage_to_attacks"]}}}
+{"ref":"Adds # to # Damage to Spells","better":1,"matchers":[{"string":"Adds # to # Damage to Spells"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_damage_to_spells"]}}}
+{"ref":"Adds # to # Elemental Damage","better":1,"matchers":[{"string":"Adds # to # Elemental Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage"]}}}
+{"ref":"Adds # to # Elemental Damage to Attacks","better":1,"matchers":[{"string":"Adds # to # Elemental Damage to Attacks"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage_to_attacks"]}}}
+{"ref":"Adds # to # Elemental Damage to Spells","better":1,"matchers":[{"string":"Adds # to # Elemental Damage to Spells"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_elemental_damage_to_spells"]}}}
 {"ref":"Adds # to # Fire Attack Damage per Buff on you","better":1,"matchers":[{"string":"Adds # to # Fire Attack Damage per Buff on you"}],"trade":{"ids":{"explicit":["explicit.stat_761505024"]}}}
 {"ref":"Adds # to # Fire Damage","better":1,"matchers":[{"string":"Adds # to # Fire Damage"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_adds_fire_damage"],"explicit":["explicit.stat_321077055","explicit.stat_709508406"],"implicit":["implicit.stat_321077055","implicit.stat_709508406"],"fractured":["fractured.stat_321077055","fractured.stat_709508406"],"scourge":["scourge.stat_709508406"],"crafted":["crafted.stat_321077055","crafted.stat_709508406"]}}}
 {"ref":"Adds # to # Fire Damage against Ignited Enemies","better":1,"matchers":[{"string":"Adds # to # Fire Damage against Ignited Enemies"}],"trade":{"ids":{"explicit":["explicit.stat_794830148"]}}}
@@ -3719,29 +3719,29 @@
 {"ref":"Harvest Monsters in your Maps have #% more Life","better":1,"matchers":[{"string":"Harvest Monsters have #% more Life"},{"string":"Harvest Monsters in your Maps have #% more Life"},{"string":"Harvest Monsters have #% less Life","negate":true},{"string":"Harvest Monsters in your Maps have #% less Life","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_2067409550"]}}}
 {"ref":"Harvests in your Maps contain at least one Crop of # Plants","better":1,"matchers":[{"string":"Harvests contain at least one Crop of Purple Plants","value":1},{"string":"Harvests in your Maps contain at least one Crop of Purple Plants","value":1},{"string":"Harvests contain at least one Crop of Yellow Plants","value":2},{"string":"Harvests in your Maps contain at least one Crop of Yellow Plants","value":2},{"string":"Harvests contain at least one Crop of Blue Plants","value":3},{"string":"Harvests in your Maps contain at least one Crop of Blue Plants","value":3}],"trade":{"ids":{"enchant":["enchant.stat_832377952"]},"option":true}}
 {"ref":"Has # Abyssal Sockets","better":1,"matchers":[{"string":"Has # Abyssal Sockets"},{"string":"Has 1 Abyssal Socket","value":1}],"trade":{"ids":{"explicit":["explicit.stat_3527617737"],"implicit":["implicit.stat_3527617737"],"fractured":["fractured.stat_3527617737"]}}}
-{"ref":"Has # Influences","better":1,"matchers":[{"string":"Has # Influences "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_influence_count"]}}}
+{"ref":"Has # Influences","better":1,"matchers":[{"string":"Has # Influences"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_influence_count"]}}}
 {"ref":"Has # White Sockets","better":1,"matchers":[{"string":"Has # White Sockets"},{"string":"Has 1 White Socket","value":1}],"trade":{"ids":{"enchant":["enchant.stat_931294424"]}}}
 {"ref":"Has 1 Socket","better":1,"matchers":[{"string":"Has # Sockets"},{"string":"Has 1 Socket","value":1}],"trade":{"ids":{"explicit":["explicit.stat_4077843608"],"implicit":["implicit.stat_4077843608"]}}}
 {"ref":"Has an additional Implicit Mod","better":1,"matchers":[{"string":"Has an additional Implicit Mod"}],"trade":{"ids":{"explicit":["explicit.stat_2489070122"]}}}
-{"ref":"Has Crusader Influence","better":1,"matchers":[{"string":"Has Crusader Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_crusader_influence"]}}}
-{"ref":"Has Elder Influence","better":1,"matchers":[{"string":"Has Elder Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_elder_influence"]}}}
+{"ref":"Has Crusader Influence","better":1,"matchers":[{"string":"Has Crusader Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_crusader_influence"]}}}
+{"ref":"Has Elder Influence","better":1,"matchers":[{"string":"Has Elder Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_elder_influence"]}}}
 {"ref":"Has Elder, Shaper and all Conqueror Influences","better":1,"matchers":[{"string":"Has Elder, Shaper and all Conqueror Influences"}],"trade":{"ids":{"implicit":["implicit.stat_1795443614"]}}}
-{"ref":"Has Hunter Influence","better":1,"matchers":[{"string":"Has Hunter Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_hunter_influence"]}}}
-{"ref":"Has Logbook Area: Battleground Graves","better":1,"matchers":[{"string":"Has Logbook Area: Battleground Graves "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_battleground_graves"]}}}
-{"ref":"Has Logbook Area: Bluffs","better":1,"matchers":[{"string":"Has Logbook Area: Bluffs "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_bluffs"]}}}
-{"ref":"Has Logbook Area: Cemetery","better":1,"matchers":[{"string":"Has Logbook Area: Cemetery "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_cemetery"]}}}
-{"ref":"Has Logbook Area: Desert Ruins","better":1,"matchers":[{"string":"Has Logbook Area: Desert Ruins "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_desert_ruins"]}}}
-{"ref":"Has Logbook Area: Dried Riverbed","better":1,"matchers":[{"string":"Has Logbook Area: Dried Riverbed "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_dried_riverbed"]}}}
-{"ref":"Has Logbook Area: Forest Ruins","better":1,"matchers":[{"string":"Has Logbook Area: Forest Ruins "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_forest_ruins"]}}}
-{"ref":"Has Logbook Area: Karui Wargraves","better":1,"matchers":[{"string":"Has Logbook Area: Karui Wargraves "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_karui_wargraves"]}}}
-{"ref":"Has Logbook Area: Mountainside","better":1,"matchers":[{"string":"Has Logbook Area: Mountainside "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_mountainside"]}}}
-{"ref":"Has Logbook Area: Rotting Temple","better":1,"matchers":[{"string":"Has Logbook Area: Rotting Temple "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_rotting_temple"]}}}
-{"ref":"Has Logbook Area: Sarn Slums","better":1,"matchers":[{"string":"Has Logbook Area: Sarn Slums "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_sarn_slums"]}}}
-{"ref":"Has Logbook Area: Scrublands","better":1,"matchers":[{"string":"Has Logbook Area: Scrublands "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_scrublands"]}}}
-{"ref":"Has Logbook Area: Shipwreck Reef","better":1,"matchers":[{"string":"Has Logbook Area: Shipwreck Reef "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_shipwreck_reef"]}}}
-{"ref":"Has Logbook Area: Utzaal Outskirts","better":1,"matchers":[{"string":"Has Logbook Area: Utzaal Outskirts "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_utzaal_outskirts"]}}}
-{"ref":"Has Logbook Area: Vaal Temple","better":1,"matchers":[{"string":"Has Logbook Area: Vaal Temple "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_vaal_temple"]}}}
-{"ref":"Has Logbook Area: Volcanic Island","better":1,"matchers":[{"string":"Has Logbook Area: Volcanic Island "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_volcano"]}}}
+{"ref":"Has Hunter Influence","better":1,"matchers":[{"string":"Has Hunter Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_hunter_influence"]}}}
+{"ref":"Has Logbook Area: Battleground Graves","better":1,"matchers":[{"string":"Has Logbook Area: Battleground Graves"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_battleground_graves"]}}}
+{"ref":"Has Logbook Area: Bluffs","better":1,"matchers":[{"string":"Has Logbook Area: Bluffs"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_bluffs"]}}}
+{"ref":"Has Logbook Area: Cemetery","better":1,"matchers":[{"string":"Has Logbook Area: Cemetery"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_cemetery"]}}}
+{"ref":"Has Logbook Area: Desert Ruins","better":1,"matchers":[{"string":"Has Logbook Area: Desert Ruins"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_desert_ruins"]}}}
+{"ref":"Has Logbook Area: Dried Riverbed","better":1,"matchers":[{"string":"Has Logbook Area: Dried Riverbed"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_dried_riverbed"]}}}
+{"ref":"Has Logbook Area: Forest Ruins","better":1,"matchers":[{"string":"Has Logbook Area: Forest Ruins"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_forest_ruins"]}}}
+{"ref":"Has Logbook Area: Karui Wargraves","better":1,"matchers":[{"string":"Has Logbook Area: Karui Wargraves"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_karui_wargraves"]}}}
+{"ref":"Has Logbook Area: Mountainside","better":1,"matchers":[{"string":"Has Logbook Area: Mountainside"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_mountainside"]}}}
+{"ref":"Has Logbook Area: Rotting Temple","better":1,"matchers":[{"string":"Has Logbook Area: Rotting Temple"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_rotting_temple"]}}}
+{"ref":"Has Logbook Area: Sarn Slums","better":1,"matchers":[{"string":"Has Logbook Area: Sarn Slums"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_sarn_slums"]}}}
+{"ref":"Has Logbook Area: Scrublands","better":1,"matchers":[{"string":"Has Logbook Area: Scrublands"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_scrublands"]}}}
+{"ref":"Has Logbook Area: Shipwreck Reef","better":1,"matchers":[{"string":"Has Logbook Area: Shipwreck Reef"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_shipwreck_reef"]}}}
+{"ref":"Has Logbook Area: Utzaal Outskirts","better":1,"matchers":[{"string":"Has Logbook Area: Utzaal Outskirts"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_utzaal_outskirts"]}}}
+{"ref":"Has Logbook Area: Vaal Temple","better":1,"matchers":[{"string":"Has Logbook Area: Vaal Temple"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_vaal_temple"]}}}
+{"ref":"Has Logbook Area: Volcanic Island","better":1,"matchers":[{"string":"Has Logbook Area: Volcanic Island"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_area_volcano"]}}}
 {"ref":"Has Logbook Faction: Black Scythe Mercenaries","better":0,"matchers":[{"string":"Black Scythe Mercenaries"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_faction_mercenaries"]}}}
 {"ref":"Has Logbook Faction: Druids of the Broken Circle","better":0,"matchers":[{"string":"Druids of the Broken Circle"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_faction_druids"]}}}
 {"ref":"Has Logbook Faction: Knights of the Sun","better":0,"matchers":[{"string":"Knights of the Sun"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_logbook_faction_knights"]}}}
@@ -3752,7 +3752,7 @@
 {"ref":"Has no Green Sockets","better":1,"matchers":[{"string":"Has no Green Sockets"}],"trade":{"ids":{"enchant":["enchant.stat_1615727675"]}}}
 {"ref":"Has no Red Sockets","better":1,"matchers":[{"string":"Has no Red Sockets"}],"trade":{"ids":{"enchant":["enchant.stat_320043039"]}}}
 {"ref":"Has no Sockets","better":1,"matchers":[{"string":"Has no Sockets"}],"trade":{"ids":{"explicit":["explicit.stat_1493091477"]}}}
-{"ref":"Has Redeemer Influence","better":1,"matchers":[{"string":"Has Redeemer Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_redeemer_influence"]}}}
+{"ref":"Has Redeemer Influence","better":1,"matchers":[{"string":"Has Redeemer Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_redeemer_influence"]}}}
 {"ref":"Has Room: Antechamber","better":0,"matchers":[{"string":"Antechamber"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_antechamber"]},"option":true}}
 {"ref":"Has Room: Apex of Ascension (Tier 3)","better":0,"matchers":[{"string":"Apex of Ascension (Tier 3)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_sacrifice_room_3"]},"option":true}}
 {"ref":"Has Room: Apex of Atzoatl","better":0,"matchers":[{"string":"Apex of Atzoatl"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_apex"]},"option":true}}
@@ -3839,8 +3839,8 @@
 {"ref":"Has Room: Warehouses (Tier 2)","better":0,"matchers":[{"string":"Warehouses (Tier 2)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_chests_2"]},"option":true}}
 {"ref":"Has Room: Wealth of the Vaal (Tier 3)","better":0,"matchers":[{"string":"Wealth of the Vaal (Tier 3)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_currency_vault_3"]},"option":true}}
 {"ref":"Has Room: Workshop (Tier 1)","better":0,"matchers":[{"string":"Workshop (Tier 1)"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_temple_workshop_1"]},"option":true}}
-{"ref":"Has Shaper Influence","better":1,"matchers":[{"string":"Has Shaper Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_shaper_influence"]}}}
-{"ref":"Has Warlord Influence","better":1,"matchers":[{"string":"Has Warlord Influence "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_warlord_influence"]}}}
+{"ref":"Has Shaper Influence","better":1,"matchers":[{"string":"Has Shaper Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_shaper_influence"]}}}
+{"ref":"Has Warlord Influence","better":1,"matchers":[{"string":"Has Warlord Influence"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_has_warlord_influence"]}}}
 {"ref":"Haste has #% increased Aura Effect","better":1,"matchers":[{"string":"Haste has #% increased Aura Effect"},{"string":"Haste has #% reduced Aura Effect","negate":true}],"trade":{"ids":{"implicit":["implicit.stat_1240056437"]}}}
 {"ref":"Haste has #% increased Mana Reservation Efficiency","better":1,"matchers":[{"string":"Haste has #% increased Mana Reservation Efficiency"},{"string":"Haste has #% reduced Mana Reservation Efficiency","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_804667127","enchant.stat_939320550"]}}}
 {"ref":"Haste has no Reservation","better":1,"matchers":[{"string":"Haste has no Reservation"}],"trade":{"ids":{"explicit":["explicit.stat_751322171"]}}}
@@ -4268,7 +4268,7 @@
 {"ref":"Mirror Arrow and Mirror Arrow Clones deal #% increased Damage","better":1,"matchers":[{"string":"Mirror Arrow and Mirror Arrow Clones deal #% increased Damage"},{"string":"Mirror Arrow and Mirror Arrow Clones deal #% reduced Damage","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_4136186767"]}}}
 {"ref":"Mirror Arrow and Mirror Arrow Clones have #% increased Attack Speed","better":1,"matchers":[{"string":"Mirror Arrow and Mirror Arrow Clones have #% increased Attack Speed"},{"string":"Mirror Arrow and Mirror Arrow Clones have #% reduced Attack Speed","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_3653459847"]}}}
 {"ref":"Mirror Arrow has #% increased Cooldown Recovery Rate","better":1,"matchers":[{"string":"Mirror Arrow has #% increased Cooldown Recovery Rate"},{"string":"Mirror Arrow has #% reduced Cooldown Recovery Rate","negate":true}],"trade":{"ids":{"enchant":["enchant.stat_1781106044"]}}}
-{"ref":"Mirrored Tablet has # Islands","better":1,"matchers":[{"string":"Mirrored Tablet has # Islands "}],"trade":{"ids":{"pseudo":["pseudo.pseudo_lake_number_of_islands"]}}}
+{"ref":"Mirrored Tablet has # Islands","better":1,"matchers":[{"string":"Mirrored Tablet has # Islands"}],"trade":{"ids":{"pseudo":["pseudo.pseudo_lake_number_of_islands"]}}}
 {"ref":"Mirrors of Kalandra found in your Maps have #% chance to drop as a stack of 2 Mirrors of Kalandra instead","dp":true,"better":1,"matchers":[{"string":"Mirrors of Kalandra found in your Maps have #% chance to drop as a stack of 2 Mirrors of Kalandra instead"}],"trade":{"ids":{"explicit":["explicit.stat_1634426651"]}}}
 {"ref":"Modifiers to Attributes instead apply to Omniscience","better":1,"matchers":[{"string":"Modifiers to Attributes instead apply to Omniscience"}],"trade":{"ids":{"explicit":["explicit.stat_1411347992"]}}}
 {"ref":"Modifiers to Claw Attack Speed also apply to Unarmed Attack Speed with Melee Skills","better":1,"matchers":[{"string":"Modifiers to Claw Attack Speed also apply to Unarmed Attack Speed with Melee Skills"}],"trade":{"ids":{"explicit":["explicit.stat_2988055461"]}}}

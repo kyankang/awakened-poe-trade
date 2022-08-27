@@ -222,6 +222,29 @@ export default defineComponent({
   },
   "cmn-Hant": {
     "League": "聯盟"
+  },
+  "ko": {
+    "Account name": "계정명",
+    "or Private League": "개인 리그",
+    "Show seller": "목록에 판매자 명칭 보기",
+    "Last character name": "캐릭터 명칭",
+    "Your items will be highlighted even if this setting is off": "이 설정이 꺼져 있어도 거래소에 등록된 아이템은 표시됩니다",
+    "Fill stat values": "능력치 범위 검색",
+    "Exact roll": "동일 능력치 값으로 검색",
+    "Show memorized cursor position": "단축키 사용 시, 커서 위치 표시",
+    "Minimum buyout price": "최소 구매 가격",
+    "Chaos Orbs": "카오스 오브",
+    "Extra time to prevent spurious Rate limiting": "지연 시간 (주의: 시간 세팅을 줄이면 IP 밴 당할 수 있습니다)",
+    "seconds": "초",
+    "Settings below are a compromise between increasing load on PoE website and convenient price checking / more accurate search.": "아래 일부 옵션은 PoE 거래소 서버 부하를 줄 수 있습니다.",
+    "Show indication on collapsed listings": "거래소의 [거래 필터 - 계정 기준으로 목록 접기] 필터 사용안함",
+    "Perform an auto search, when pressing": "판매자 목록 자동 검색",
+    "Always select \"Stock\" filter": "항상 \"재고 수량\" 필터 보기",
+    "League": "리그",
+    "Loading leagues...": "리그 로딩중...",
+    "Failed to load leagues": "리그 가져오기 실패",
+    "Price check Item, and follow the instructions in the error description.": "Price check Item, and follow the instructions in the error description.",
+    "Show price prediction": "예측 가격 보기"
   }
 }
 </i18n>

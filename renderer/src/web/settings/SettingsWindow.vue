@@ -190,6 +190,17 @@ function flatJoin<T, J> (arr: T[][], joinEl: () => J) {
     "Chat": "Чат",
     "Stash search": "Поиск в тайнике",
     "Stopwatch": "Секундомер"
+  },
+  "ko": {
+    "Settings - Awakened PoE Trade": "환경설정 - Awakened PoE Trade",
+    "Hotkeys": "단축키",
+    "General": "일반",
+    "Price check": "시세 조회",
+    "Maps": "지도 위험 모드",
+    "Debug": "디버깅",
+    "Chat": "단축키 (채팅)",
+    "Stash search": "창고 검색",
+    "Stopwatch": "스탑워치"
   }
 }
 </i18n>
