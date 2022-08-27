@@ -6,23 +6,21 @@
         <span class="mr-1">{{ t('Matched:') }}</span>
         <span v-if="!result" class="text-gray-600">...</span>
         <div v-else class="flex items-center">
-          <button class="btn flex items-center mr-1" :style="{ background: selectedCurr !== 'chaos' ? 'transparent' : undefined }"
-            @click="selectedCurr = 'chaos'">
+          <button class="btn flex items-center mr-1" :style="{ background: selectedCurr !== 'xchgChaos' ? 'transparent' : undefined }"
+            @click="selectedCurr = 'xchgChaos'">
             <img src="/images/chaos.png" class="trade-bulk-currency-icon">
-            <span>{{ result.chaos.listed.value?.total ?? '?' }}</span>
+            <span>{{ result.xchgChaos.listed.value?.total ?? '?' }}</span>
           </button>
-          <button class="btn flex items-center mr-1" :style="{ background: selectedCurr !== 'exa' ? 'transparent' : undefined }"
-            @click="selectedCurr = 'exa'">
-            <img src="/images/exa.png" class="trade-bulk-currency-icon">
-            <span>{{ result.exa.listed.value?.total ?? '?' }}</span>
+          <button class="btn flex items-center mr-1" :style="{ background: selectedCurr !== 'xchgStable' ? 'transparent' : undefined }"
+            @click="selectedCurr = 'xchgStable'">
+            <img src="/images/divine.png" class="trade-bulk-currency-icon">
+            <span>{{ result.xchgStable.listed.value?.total ?? '?' }}</span>
           </button>
           <span class="ml-1"><online-filter :filters="filters" /></span>
         </div>
       </div>
-      <div v-if="result" class="flex">
-        <button @click="openTradeLink(false)" class="bg-gray-700 text-gray-400 rounded-l mr-px px-2">{{ t('Trade') }}</button>
-        <button @click="openTradeLink(true)" class="bg-gray-700 text-gray-400 rounded-r px-2"><i class="fas fa-external-link-alt text-xs"></i></button>
-      </div>
+      <trade-links v-if="result"
+        :get-link="makeTradeLink" />
     </div>
     <div class="layout-column overflow-y-auto overflow-x-hidden">
       <table class="table-stripped w-full">
@@ -32,7 +30,7 @@
               <div class="px-2">{{ t('Price') }}</div>
             </th>
             <th class="trade-table-heading">
-              <div class="pl-1 pr-2 flex text-xs" style="line-height: 1.3125rem;"><span class="w-8 inline-block text-right -ml-px mr-px">{{ selectedCurr }}</span><span>{{ '\u2009' }}/{{ '\u2009' }}</span><span class="w-8 inline-block">{{ t('bulk') }}</span></div>
+              <div class="pl-1 pr-2 flex text-xs" style="line-height: 1.3125rem;"><span class="w-8 inline-block text-right -ml-px mr-px">{{ (selectedCurr === 'xchgChaos') ? 'chaos' : 'div' }}</span><span>{{ '\u2009' }}/{{ '\u2009' }}</span><span class="w-8 inline-block">{{ t('bulk') }}</span></div>
             </th>
             <th class="trade-table-heading">
               <div class="px-1">{{ t('Stock') }}</div>
@@ -87,7 +85,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, inject, computed, watch, ComputedRef, Ref, shallowRef, shallowReactive } from 'vue'
+import { defineComponent, PropType, computed, watch, ComputedRef, Ref, shallowRef, shallowReactive } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { BulkSearch, execBulkSearch, PricingResult } from './pathofexile-bulk'
 import { getTradeEndpoint } from './common'
@@ -98,11 +96,12 @@ import { ParsedItem } from '@/parser'
 import { PriceCheckWidget } from '@/web/overlay/interfaces'
 import { artificialSlowdown } from './artificial-slowdown'
 import OnlineFilter from './OnlineFilter.vue'
+import TradeLinks from './TradeLinks.vue'
 
 const slowdown = artificialSlowdown(900)
 
 function useBulkApi () {
-  type BulkSearchExtended = Record<'exa' | 'chaos', {
+  type BulkSearchExtended = Record<'xchgChaos' | 'xchgStable', {
     listed: Ref<BulkSearch | null>
     listedLazy: ComputedRef<PricingResult[]>
   }>
@@ -121,17 +120,17 @@ function useBulkApi () {
 
       // override, because at league start many players set wrong price, and this breaks optimistic search
       const have = (item.info.refName === 'Chaos Orb')
-        ? ['exalted']
-        : (item.info.refName === 'Exalted Orb')
+        ? ['divine']
+        : (item.info.refName === 'Divine Orb')
             ? ['chaos']
-            : ['exalted', 'chaos']
+            : ['divine', 'chaos']
 
       const optimisticSearch = await execBulkSearch(
         item, filters, have, { accountName: AppConfig().accountName })
       if (_searchId === searchId) {
         result.value = {
-          exa: getResultsByHave(item, filters, optimisticSearch, 'exalted'),
-          chaos: getResultsByHave(item, filters, optimisticSearch, 'chaos')
+          xchgStable: getResultsByHave(item, filters, optimisticSearch, 'divine'),
+          xchgChaos: getResultsByHave(item, filters, optimisticSearch, 'chaos')
         }
       }
     } catch (err) {
@@ -143,7 +142,7 @@ function useBulkApi () {
     item: ParsedItem,
     filters: ItemFilters,
     preloaded: Array<BulkSearch | null>,
-    have: 'exalted' | 'chaos'
+    have: 'divine' | 'chaos'
   ) {
     const _result = shallowRef(
       preloaded.some(res => res?.haveTag === have)
@@ -161,9 +160,9 @@ function useBulkApi () {
               item, filters, [have], { accountName: AppConfig().accountName }))[0]!
             )
             items.value = _result.value.listed
-            const otherHave = (have === 'exalted')
-              ? result.value?.chaos?.listed.value!
-              : result.value?.exa?.listed.value!
+            const otherHave = (have === 'divine')
+              ? result.value?.xchgChaos?.listed.value!
+              : result.value?.xchgStable?.listed.value!
             // fix best guess we did while making optimistic search
             otherHave.total -= _result.value.total
           } catch (err) {
@@ -182,7 +181,7 @@ function useBulkApi () {
 }
 
 export default defineComponent({
-  components: { OnlineFilter },
+  components: { OnlineFilter, TradeLinks },
   props: {
     filters: {
       type: Object as PropType<ItemFilters>,
@@ -197,7 +196,7 @@ export default defineComponent({
     const widget = computed(() => AppConfig<PriceCheckWidget>('price-check')!)
     const { error, result, search } = useBulkApi()
 
-    const selectedCurr = shallowRef<'chaos' | 'exa'>('chaos')
+    const selectedCurr = shallowRef<'xchgChaos' | 'xchgStable'>('xchgChaos')
 
     watch(() => props.item, (item) => {
       slowdown.reset(item)
@@ -213,18 +212,16 @@ export default defineComponent({
     })
 
     watch(result, () => {
-      const exaTotal = result.value?.exa.listed.value?.total
-      const chaosTotal = result.value?.chaos.listed.value?.total
-      if (exaTotal == null) {
-        selectedCurr.value = 'chaos'
+      const stableTotal = result.value?.xchgStable.listed.value?.total
+      const chaosTotal = result.value?.xchgChaos.listed.value?.total
+      if (stableTotal == null) {
+        selectedCurr.value = 'xchgChaos'
       } else if (chaosTotal == null) {
-        selectedCurr.value = 'exa'
+        selectedCurr.value = 'xchgStable'
       } else {
-        selectedCurr.value = (exaTotal > chaosTotal) ? 'exa' : 'chaos'
+        selectedCurr.value = (stableTotal > chaosTotal) ? 'xchgStable' : 'xchgChaos'
       }
     })
-
-    const showBrowser = inject<(url: string) => void>('builtin-browser')!
 
     const { t } = useI18n()
 
@@ -236,13 +233,8 @@ export default defineComponent({
       selectedCurr,
       execSearch: () => { search(props.item, props.filters) },
       showSeller: computed(() => widget.value.showSeller),
-      openTradeLink (isExternal: boolean) {
-        const link = `https://${getTradeEndpoint()}/trade/exchange/${league.value}/${result.value![selectedCurr.value].listed.value!.queryId}`
-        if (isExternal) {
-          window.open(link)
-        } else {
-          showBrowser(link)
-        }
+      makeTradeLink () {
+        return `https://${getTradeEndpoint()}/trade/exchange/${league.value}/${result.value![selectedCurr.value].listed.value!.queryId}`
       }
     }
   }

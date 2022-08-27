@@ -1,33 +1,33 @@
 <template>
   <div
     style="top: 0; left: 0; height: 100%; width: 100%; position: absolute;"
-    class="flex-grow flex h-full pointer-events-none" :class="{
+    class="flex grow h-full pointer-events-none" :class="{
     'flex-row': clickPosition === 'stash',
     'flex-row-reverse': clickPosition === 'inventory',
   }">
-    <div v-if="!isBrowserShown" class="layout-column flex-shrink-0"
+    <div v-if="!isBrowserShown" class="layout-column shrink-0"
       :style="{ width: `${poeUiWidth}px` }">
     </div>
-    <div id="price-window" class="layout-column flex-shrink-0 text-gray-200 pointer-events-auto" style="width: 28.75rem;">
+    <div id="price-window" class="layout-column shrink-0 text-gray-200 pointer-events-auto" style="width: 28.75rem;">
       <app-titlebar @close="closePriceCheck" @click="openLeagueSelection" :title="title">
         <div class="flex">
-          <ui-popover v-if="exaltedCost" trigger="click" boundary="#price-window">
+          <ui-popover v-if="stableOrbCost" trigger="click" boundary="#price-window">
             <template #target>
-              <button><i class="fas fa-exchange-alt"></i> {{ exaltedCost }}</button>
+              <button><i class="fas fa-exchange-alt"></i> {{ stableOrbCost }}</button>
             </template>
             <template #content>
               <item-quick-price class="text-base"
-                :price="{ min: exaltedCost, max: exaltedCost, currency: 'chaos' }"
-                item-img="/images/exa.png"
+                :price="{ min: stableOrbCost, max: stableOrbCost, currency: 'chaos' }"
+                item-img="/images/divine.png"
               />
               <div v-for="i in 9" :key="i">
-                <div class="pl-1">{{ i / 10 }} exa ⇒ {{ Math.round(exaltedCost * i / 10) }} c</div>
+                <div class="pl-1">{{ i / 10 }} div ⇒ {{ Math.round(stableOrbCost * i / 10) }} c</div>
               </div>
             </template>
           </ui-popover>
         </div>
       </app-titlebar>
-      <div class="flex-grow layout-column min-h-0 bg-gray-800">
+      <div class="grow layout-column min-h-0 bg-gray-800">
         <background-info />
         <check-position-circle v-if="showCheckPos"
           :position="checkPosition" style="z-index: -1;" />
@@ -71,10 +71,10 @@ import { useI18n } from 'vue-i18n'
 import CheckedItem from './CheckedItem.vue'
 import BackgroundInfo from './BackgroundInfo.vue'
 import { MainProcess } from '@/web/background/IPC'
-import { chaosExaRate } from '../background/Prices'
+import { xchgRate } from '../background/Prices'
 import { selected as league } from '@/web/background/Leagues'
 import { AppConfig } from '@/web/Config'
-import { parseClipboard, ParsedItem } from '@/parser'
+import { ItemCategory, ItemRarity, parseClipboard, ParsedItem } from '@/parser'
 import RelatedItems from './related-items/RelatedItems.vue'
 import RateLimiterState from './trade/RateLimiterState.vue'
 import UnidentifiedResolver from './unidentified-resolver/UnidentifiedResolver.vue'
@@ -127,7 +127,15 @@ export default defineComponent({
       }
       advancedCheck.value = e.lockedMode
       try {
-        item.value = parseClipboard(e.clipboard)
+        const parsed = parseClipboard(e.clipboard)
+        if (parsed != null && (
+          (parsed.category === ItemCategory.HeistContract && parsed.rarity !== ItemRarity.Unique) ||
+          (parsed.category === ItemCategory.Sentinel && parsed.rarity !== ItemRarity.Unique)
+        )) {
+          throw new Error('UNKNOWN_ITEM')
+        } else {
+          item.value = parsed
+        }
       } catch (err: unknown) {
         const strings = (err instanceof Error && err.message === 'UNKNOWN_ITEM')
           ? 'unknown_item'
@@ -154,7 +162,7 @@ export default defineComponent({
     })
 
     const title = computed(() => league.value || 'Awakened PoE Trade')
-    const exaltedCost = computed(() => (chaosExaRate.value) ? Math.round(chaosExaRate.value) : null)
+    const stableOrbCost = computed(() => (xchgRate.value) ? Math.round(xchgRate.value) : null)
     const isBrowserShown = computed(() => props.config.wmFlags.includes('has-browser'))
     const overlayKey = computed(() => AppConfig().overlayKey)
     const showCheckPos = computed(() => wm.active.value && props.config.showCursor)
@@ -219,7 +227,7 @@ export default defineComponent({
       poeUiWidth: wm.poePanelWidth,
       closePriceCheck,
       title,
-      exaltedCost,
+      stableOrbCost,
       showCheckPos,
       checkPosition,
       item,

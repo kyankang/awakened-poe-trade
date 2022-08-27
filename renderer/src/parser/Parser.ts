@@ -45,6 +45,7 @@ const parsers: Array<ParserFn | { virtual: VirtualParserFn }> = [
   parseFlask,
   parseStackSize,
   parseCorrupted,
+  parseRelic,
   parseInfluence,
   parseMap,
   parseSockets,
@@ -52,6 +53,7 @@ const parsers: Array<ParserFn | { virtual: VirtualParserFn }> = [
   parseAreaLevel,
   parseAtzoatlRooms,
   parseMirrored,
+  parseSentinelCharge,
   parseLogbookArea,
   parseLogbookArea,
   parseLogbookArea,
@@ -176,6 +178,9 @@ function findInDatabase (item: ParserState) {
   }
   if (!info?.length) {
     throw new Error('UNKNOWN_ITEM')
+  }
+  if (info[0].unique) {
+    info = info.filter(info => info.unique!.base === item.baseType)
   }
   item.infoVariants = info
   // choose 1st variant, correct one will be picked at the end of parsing
@@ -345,6 +350,21 @@ function parseInfluence (section: string[], item: ParsedItem) {
 function parseCorrupted (section: string[], item: ParsedItem) {
   if (section[0] === _$.CORRUPTED) {
     item.isCorrupted = true
+    return 'SECTION_PARSED'
+  } else if (section[0] === _$.UNMODIFIABLE) {
+    item.isCorrupted = true
+    item.isUnmodifiable = true
+    return 'SECTION_PARSED'
+  }
+  return 'SECTION_SKIPPED'
+}
+
+function parseRelic (section: string[], item: ParsedItem) {
+  if (item.rarity !== ItemRarity.Unique) {
+    return 'PARSER_SKIPPED'
+  }
+  if (section[0] === _$.RELIC_UNIQUE) {
+    item.isRelic = true
     return 'SECTION_PARSED'
   }
   return 'SECTION_SKIPPED'
@@ -650,12 +670,30 @@ function parseFlask (section: string[], item: ParsedItem) {
   // the purpose of this parser is to "consume" flask buffs
   // so they are not recognized as modifiers
 
+  let isParsed: SectionParseResult = 'SECTION_SKIPPED'
+
   for (const line of section) {
     if (_$.FLASK_CHARGES.test(line)) {
-      return 'SECTION_PARSED'
+      isParsed = 'SECTION_PARSED'; break
     }
   }
 
+  if (isParsed) {
+    parseQualityNested(section, item)
+  }
+
+  return isParsed
+}
+
+function parseSentinelCharge (section: string[], item: ParsedItem) {
+  if (item.category !== ItemCategory.Sentinel) return 'PARSER_SKIPPED'
+
+  if (section.length === 1) {
+    if (section[0].startsWith(_$.SENTINEL_CHARGE)) {
+      item.sentinelCharge = parseInt(section[0].slice(_$.SENTINEL_CHARGE.length), 10)
+      return 'SECTION_PARSED'
+    }
+  }
   return 'SECTION_SKIPPED'
 }
 

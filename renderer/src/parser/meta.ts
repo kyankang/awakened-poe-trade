@@ -41,7 +41,9 @@ export enum ItemCategory {
   Gem = 'Gem',
   Currency = 'Currency',
   DivinationCard = 'Divination Card',
-  Voidstone = 'Voidstone'
+  Voidstone = 'Voidstone',
+  Sentinel = 'Sentinel',
+  MemoryLine = 'Memory Line'
 }
 
 export const WEAPON_ONE_HANDED_MELEE = new Set([

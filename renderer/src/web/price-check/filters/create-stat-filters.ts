@@ -5,7 +5,8 @@ import { FilterTag, ItemHasEmptyModifier, StatFilter } from './interfaces'
 import { filterPseudo } from './pseudo'
 import { applyRules as applyAtzoatlRules } from './pseudo/atzoatl-rules'
 import { filterItemProp } from './pseudo/item-property'
-import { StatBetter } from '@/assets/data'
+import { decodeOils, applyAnointmentRules } from './pseudo/anointments'
+import { StatBetter, CLIENT_STRINGS } from '@/assets/data'
 
 export interface FiltersCreationContext {
   readonly item: ParsedItem
@@ -26,14 +27,7 @@ export function createExactStatFilters (
     !item.isSynthesised
   ) return []
 
-  const keepByType = [ModifierType.Pseudo, ModifierType.Fractured]
-  if (
-    item.category !== ItemCategory.Amulet &&
-    item.category !== ItemCategory.Ring &&
-    item.category !== ItemCategory.Flask
-  ) {
-    keepByType.push(ModifierType.Enchant)
-  }
+  const keepByType = [ModifierType.Pseudo, ModifierType.Fractured, ModifierType.Enchant]
 
   if (
     !item.influences.length &&
@@ -43,14 +37,18 @@ export function createExactStatFilters (
   }
 
   if (item.rarity === ItemRarity.Magic && (
-    item.category !== ItemCategory.Flask &&
     item.category !== ItemCategory.ClusterJewel &&
     item.category !== ItemCategory.Map &&
     item.category !== ItemCategory.Invitation &&
     item.category !== ItemCategory.HeistContract &&
-    item.category !== ItemCategory.HeistBlueprint
+    item.category !== ItemCategory.HeistBlueprint &&
+    item.category !== ItemCategory.Sentinel
   )) {
     keepByType.push(ModifierType.Explicit)
+  }
+
+  if (item.category === ItemCategory.Flask) {
+    keepByType.push(ModifierType.Crafted)
   }
 
   const ctx: FiltersCreationContext = {
@@ -90,6 +88,8 @@ export function createExactStatFilters (
 
   if (item.category === ItemCategory.ClusterJewel) {
     applyClusterJewelRules(ctx.filters)
+  } else if (item.category === ItemCategory.Flask) {
+    applyFlaskRules(ctx.filters)
   }
 
   return ctx.filters
@@ -116,8 +116,15 @@ export function initUiModFilters (
     })
   }
 
-  filterItemProp(ctx)
-  filterPseudo(ctx)
+  if (item.info.refName !== 'Split Personality') {
+    filterItemProp(ctx)
+    filterPseudo(ctx)
+  }
+
+  if (!item.isCorrupted && !item.isMirrored) {
+    ctx.statsByType = ctx.statsByType.filter(mod => mod.type !== ModifierType.Fractured)
+    ctx.statsByType.push(...item.statsByType.filter(mod => mod.type === ModifierType.Fractured))
+  }
 
   if (item.isVeiled) {
     ctx.statsByType = ctx.statsByType.filter(mod => mod.type !== ModifierType.Veiled)
@@ -152,6 +159,7 @@ export function calculatedStatToFilter (
       tag: (type === ModifierType.Enchant)
         ? FilterTag.Enchant
         : FilterTag.Variant,
+      oils: decodeOils(calc),
       sources: sources,
       option: {
         value: sources[0].contributes!.value
@@ -168,6 +176,7 @@ export function calculatedStatToFilter (
     statRef: stat.ref,
     text: translation.string,
     tag: (type as unknown) as FilterTag,
+    oils: decodeOils(calc),
     sources: sources,
     roll: undefined,
     disabled: true
@@ -187,6 +196,25 @@ export function calculatedStatToFilter (
       if (!fixedStats.includes(filter.statRef)) {
         filter.tag = FilterTag.Variant
       }
+    } else if (sources.some(s => CLIENT_STRINGS.SHAPER_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Shaper
+    } else if (sources.some(s => CLIENT_STRINGS.ELDER_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Elder
+    } else if (sources.some(s => CLIENT_STRINGS.HUNTER_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Hunter
+    } else if (sources.some(s => CLIENT_STRINGS.WARLORD_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Warlord
+    } else if (sources.some(s => CLIENT_STRINGS.REDEEMER_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Redeemer
+    } else if (sources.some(s => CLIENT_STRINGS.CRUSADER_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Crusader
+    } else if (sources.some(s => CLIENT_STRINGS.DELVE_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Delve
+    } else if (sources.some(s => CLIENT_STRINGS.VEILED_MODS.includes(s.modifier.info.name!))) {
+      // can't drop from ground, so don't show
+      // filter.tag = FilterTag.Unveiled
+    } else if (sources.some(s => CLIENT_STRINGS.INCURSION_MODS.includes(s.modifier.info.name!))) {
+      filter.tag = FilterTag.Incursion
     }
   }
 
@@ -200,15 +228,17 @@ export function calculatedStatToFilter (
       max: percentRoll(roll.max, +0, Math.ceil, dp)
     }
 
-    const filterDefault = (item.rarity === ItemRarity.Unique)
-      ? {
-          min: percentRollDelta(roll.value, (roll.max - roll.min), -percent, Math.floor, dp),
-          max: percentRollDelta(roll.value, (roll.max - roll.min), +percent, Math.ceil, dp)
-        }
-      : {
-          min: percentRoll(roll.value, -percent, Math.floor, dp),
-          max: percentRoll(roll.value, +percent, Math.ceil, dp)
-        }
+    const filterDefault = (calc.stat.better === StatBetter.NotComparable)
+      ? { min: roll.value, max: roll.value }
+      : (item.rarity === ItemRarity.Unique)
+          ? {
+              min: percentRollDelta(roll.value, (roll.max - roll.min), -percent, Math.floor, dp),
+              max: percentRollDelta(roll.value, (roll.max - roll.min), +percent, Math.ceil, dp)
+            }
+          : {
+              min: percentRoll(roll.value, -percent, Math.floor, dp),
+              max: percentRoll(roll.value, +percent, Math.ceil, dp)
+            }
     filterDefault.min = Math.max(filterDefault.min, filterBounds.min)
     filterDefault.max = Math.min(filterDefault.max, filterBounds.max)
 
@@ -217,7 +247,7 @@ export function calculatedStatToFilter (
       min: undefined,
       max: undefined,
       default: filterDefault,
-      bounds: (roll.min !== roll.max && item.rarity === ItemRarity.Unique)
+      bounds: (item.rarity === ItemRarity.Unique && roll.min !== roll.max && calc.stat.better !== StatBetter.NotComparable)
         ? filterBounds
         : undefined,
       dp: dp,
@@ -239,6 +269,8 @@ export function calculatedStatToFilter (
 
 function hideNotVariableStat (filter: StatFilter, item: ParsedItem) {
   if (item.rarity !== ItemRarity.Unique) return
+  if (filter.tag === FilterTag.Implicit &&
+    item.category === ItemCategory.Jewel) return
   if (
     filter.tag !== FilterTag.Implicit &&
     filter.tag !== FilterTag.Explicit &&
@@ -301,6 +333,8 @@ function finalFilterTweaks (ctx: FiltersCreationContext) {
 
   if (item.category === ItemCategory.ClusterJewel && item.rarity !== ItemRarity.Unique) {
     applyClusterJewelRules(ctx.filters)
+  } else if (item.category === ItemCategory.Flask) {
+    applyFlaskRules(ctx.filters)
   }
 
   const hasEmptyModifier = showHasEmptyModifier(ctx)
@@ -319,16 +353,8 @@ function finalFilterTweaks (ctx: FiltersCreationContext) {
     })
   }
 
-  if (item.category === ItemCategory.Amulet) {
-    const anointment = ctx.filters.find(filter => filter.statRef === 'Allocates #')
-    if (anointment) {
-      if (item.talismanTier) {
-        anointment.disabled = false
-      } else if (!item.isCorrupted && !item.isMirrored) {
-        anointment.hidden = 'Buyer will likely change anointment'
-        anointment.disabled = true
-      }
-    }
+  if (item.category === ItemCategory.Amulet || item.category === ItemCategory.Ring) {
+    applyAnointmentRules(ctx.filters, ctx.item)
   }
 
   for (const filter of ctx.filters) {
@@ -371,6 +397,16 @@ function applyClusterJewelRules (filters: StatFilter[]) {
         filter.roll!.max = undefined
       }
       // else 2, 8, 9 are [_ , n]
+    }
+  }
+}
+
+function applyFlaskRules (filters: StatFilter[]) {
+  const usedEnkindling = filters.find(filter => filter.statRef === 'Gains no Charges during Flask Effect')
+  for (const filter of filters) {
+    if (filter.tag === FilterTag.Enchant && !usedEnkindling) {
+      filter.hidden = 'hide_harvest_and_instilling'
+      filter.disabled = true
     }
   }
 }

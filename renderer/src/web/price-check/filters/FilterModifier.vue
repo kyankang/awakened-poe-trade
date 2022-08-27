@@ -42,38 +42,20 @@
             </template>
           </ui-popover>
         </div>
-        <div class="flex-1 flex items-start">
+        <div class="flex-1 flex items-start gap-x-2">
           <span v-if="showTag"
-            :class="[$style['tag'], $style[`tag-${tag}`]]">{{ t(tag) }}</span>
+            :class="[$style['tag'], $style[`tag-${tag}`]]">{{ t(tag) }}{{ (filter.sources.length > 1) ? ` x ${filter.sources.length}` : null }}</span>
+          <filter-modifier-tiers :filter="filter" :item="item" />
           <filter-modifier-item-has-empty :filter="filter" />
         </div>
-        <div v-if="roll && roll.bounds"
-          class="mr-4" style="width: 12.5rem;">
-          <ui-slider
-            class="search-slider-rail" style="padding: 0;" :dotSize="[0, 1.25*fontSize]" :height="1.25*fontSize"
-            :railStyle="{ background: 'transparent' }" :processStyle="{ background: '#cbd5e0', borderRadius: 0 }"
-            drag-on-click lazy adsorb :enable-cross="false"
-
-            v-model="sliderValue"
-            :marks="{
-              [roll.bounds.min]: { label: 'min' },
-              [roll.bounds.max]: { label: 'max' },
-              [roll.value]: { label: 'roll' }
-            }"
-            :min="roll.bounds.min"
-            :max="roll.bounds.max"
-            :interval="changeStep"
-          >
-          <template v-slot:mark="{ pos, label, active }">
-            <div class="custom-mark" :class="{ active, [label]: true }" :style="{ flex: pos }">
-              <div class="custom-mark-tick" :style="{ 'left': `calc(${pos}% - 1px)` }"></div>
-              {{ label === 'min' ? roll.bounds.min : label === 'max' ? roll.bounds.max
-                : (roll.value === roll.bounds.min || roll.value === roll.bounds.max ? roll.value : '') }}
-            </div>
-          </template>
-          </ui-slider>
-        </div>
-        <div style="width: calc(2*3rem + 1px)"></div>
+        <stat-roll-slider v-if="roll && roll.bounds"
+          class="mr-4" style="width: 12.5rem;"
+          v-model="sliderValue"
+          :roll="roll.value"
+          :dp="roll.dp"
+          :bounds="roll.bounds"
+        />
+        <div style="width: calc(2*3rem + 1px)" />
       </div>
     </div>
     <div class="flex flex-col">
@@ -83,18 +65,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, computed, ref, nextTick, ComponentPublicInstance } from 'vue'
+import { defineComponent, PropType, computed, ref, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
+import StatRollSlider from '../../ui/StatRollSlider.vue'
 import ItemModifierText from '../../ui/ItemModifierText.vue'
 import ModifierAnointment from './FilterModifierAnointment.vue'
 import FilterModifierItemHasEmpty from './FilterModifierItemHasEmpty.vue'
+import FilterModifierTiers from './FilterModifierTiers.vue'
 import { AppConfig } from '@/web/Config'
 import { ItemRarity, ParsedItem } from '@/parser'
 import { FilterTag, StatFilter } from './interfaces'
 import SourceInfo from './SourceInfo.vue'
 
 export default defineComponent({
-  components: { ItemModifierText, ModifierAnointment, FilterModifierItemHasEmpty, SourceInfo },
+  components: { ItemModifierText, ModifierAnointment, FilterModifierItemHasEmpty, FilterModifierTiers, SourceInfo, StatRollSlider },
   emits: ['submit'],
   props: {
     filter: {
@@ -133,27 +117,24 @@ export default defineComponent({
 
     const calcQuality = computed(() => Math.max(20, props.item.quality || 0))
 
-    const inputMinEl = ref<ComponentPublicInstance | null>(null)
-    const inputMaxEl = ref<ComponentPublicInstance | null>(null)
+    const inputMinEl = ref<HTMLInputElement | null>(null)
+    const inputMaxEl = ref<HTMLInputElement | null>(null)
 
-    const sliderValue = computed<Array<number>>({
+    const sliderValue = computed<Array<number | '' | undefined>>({
       get () {
         const roll = props.filter.roll!
-        return [
-          typeof roll.min === 'number' ? roll.min : roll.bounds!.min,
-          typeof roll.max === 'number' ? roll.max : roll.bounds!.max
-        ]
+        return [roll.min, roll.max]
       },
       set (value) {
-        if (props.filter.roll!.min !== value[0]) {
+        if (typeof value[0] === 'number') {
           props.filter.roll!.min = value[0]
           nextTick(() => {
-            (inputMinEl.value!.$el as HTMLInputElement).focus()
+            inputMinEl.value!.focus()
           })
-        } else if (props.filter.roll!.max !== value[1]) {
+        } else if (typeof value[1] === 'number') {
           props.filter.roll!.max = value[1]
           nextTick(() => {
-            (inputMaxEl.value!.$el as HTMLInputElement).focus()
+            inputMaxEl.value!.focus()
           })
         }
         props.filter.disabled = false
@@ -206,7 +187,7 @@ export default defineComponent({
       tag: computed(() => props.filter.tag),
       // TODO: change
       changeStep: computed(() => props.filter.roll!.dp ? 0.01 : 1),
-      showInputs: computed(() => props.filter.roll != null),
+      showInputs: computed(() => props.filter.roll != null && !props.filter.oils),
       fontSize: computed(() => AppConfig().fontSize),
       isDisabled: computed(() => props.filter.disabled),
       text: computed(() => t(props.filter.text)),
@@ -288,10 +269,6 @@ export default defineComponent({
   display: none;
 }
 
-.filter:nth-child(4) > .mods {
-  display: block;
-}
-
 .tag {
   @apply px-1;
   @apply rounded;
@@ -303,6 +280,45 @@ export default defineComponent({
 .tag-eldritch {
   background: linear-gradient(to right, theme('colors.red.700'), theme('colors.blue.700'));
 }
+.tag-explicit-shaper,
+.tag-explicit-elder,
+.tag-explicit-crusader,
+.tag-explicit-hunter,
+.tag-explicit-redeemer,
+.tag-explicit-warlord,
+.tag-explicit-delve,
+.tag-explicit-veiled,
+.tag-explicit-incursion {
+  display: flex;
+  align-items: center;
+  @apply -mx-1 pl-0.5 gap-x-0.5 text-gray-600;
+  text-shadow: 0 0 4px theme('colors.gray.900');
+
+  &::before {
+    background-size: contain;
+    @apply w-5 h-5 -my-5;
+    content: '';
+  }
+}
+.tag-explicit-shaper::before {
+  background-image: url('/images/influence-Shaper.png'); }
+.tag-explicit-elder::before {
+  background-image: url('/images/influence-Elder.png'); }
+.tag-explicit-crusader::before {
+  background-image: url('/images/influence-Crusader.png'); }
+.tag-explicit-hunter::before {
+  background-image: url('/images/influence-Hunter.png'); }
+.tag-explicit-redeemer::before {
+  background-image: url('/images/influence-Redeemer.png'); }
+.tag-explicit-warlord::before {
+  background-image: url('/images/influence-Warlord.png'); }
+.tag-explicit-delve::before {
+  background-image: url('/images/delve.png'); }
+.tag-explicit-veiled::before {
+  background-image: url('/images/veiled.png'); }
+.tag-explicit-incursion::before {
+  background-image: url('/images/incursion.png'); }
+
 .tag-corrupted {
   @apply bg-red-700 text-red-100; }
 .tag-fractured {
@@ -310,13 +326,15 @@ export default defineComponent({
 .tag-crafted, .tag-synthesised {
   @apply bg-blue-600 text-blue-100; }
 .tag-implicit, .tag-explicit {
-  @apply -mx-1 text-gray-600; }
+  @apply -mx-1 text-gray-600;
+  text-shadow: 0 0 4px theme('colors.gray.900');
+}
 .tag-scourge {
   @apply bg-orange-600 text-white; }
 .tag-enchant {
   @apply bg-purple-600 text-purple-100; }
 .tag-pseudo {
-  @apply bg-gray-700 text-gray-900; }
+  @apply bg-gray-700 text-black; }
 </style>
 
 <style lang="postcss">
@@ -336,51 +354,21 @@ export default defineComponent({
     @apply bg-gray-700;
   }
 }
-
-.search-slider-rail { @apply rounded bg-gray-700; }
-.vue-slider-marks { display: flex; }
-.vue-slider-dot-tooltip-inner {
-  font-size: 0.875rem;
-  padding: 0.125rem 0.3125rem;
-  min-width: 1.25rem;
-  border-radius: 0.25rem;
-
-  &::after {
-    border-width: 0.3125rem;
-  }
-}
-.custom-mark {
-  text-align: right;
-  white-space: nowrap;
-  @apply px-1;
-  @apply text-gray-500;
-
-  &.active {
-    z-index: 1;
-    @apply text-gray-900;
-  }
-
-  &.roll .custom-mark-tick {
-    position: absolute;
-    height: 100%;
-
-    &::before, &::after {
-      content: ' ';
-      display: block;
-      position: absolute;
-      height: 0.25rem;
-      width: 0.125rem;
-      @apply bg-gray-900;
-    }
-
-    &::before { top: 0; }
-    &::after { bottom: 0; }
-  }
-}
 </style>
 
 <i18n>
 {
+  "en": {
+    "explicit-shaper": "Shaper",
+    "explicit-elder": "Elder",
+    "explicit-crusader": "Crusader",
+    "explicit-hunter": "Hunter",
+    "explicit-redeemer": "Redeemer",
+    "explicit-warlord": "Warlord",
+    "explicit-delve": "Delve",
+    "explicit-veiled": "Veiled",
+    "explicit-incursion": "Incursion"
+  },
   "ru": {
     "Q {0}%": "К-во: {0}%",
     "DPS: #": "ДПС: #",
@@ -398,6 +386,15 @@ export default defineComponent({
     "synthesised": "синтезирован",
     "eldritch": "зловещий",
     "pseudo": "псевдо",
+    "explicit-shaper": "Создатель",
+    "explicit-elder": "Древний",
+    "explicit-crusader": "Крестоносец",
+    "explicit-hunter": "Охотник",
+    "explicit-redeemer": "Избавительница",
+    "explicit-warlord": "Вождь",
+    "explicit-delve": "Спуск",
+    "explicit-veiled": "Завуалирован",
+    "explicit-incursion": "Вмешательство",
     "Roll is not variable": "Ролл не варьируется",
     "Elemental damage is not the main source of DPS": "Стихийный урон не основной источник ДПСа",
     "Physical damage is not the main source of DPS": "Физический урон не основной источник ДПСа",
@@ -426,6 +423,15 @@ export default defineComponent({
     "synthesised": "追憶",
     "eldritch": "異能",
     "pseudo": "偽屬性",
+    "explicit-shaper": "塑界者",
+    "explicit-elder": "尊師",
+    "explicit-crusader": "聖戰軍王",
+    "explicit-hunter": "狩獵者",
+    "explicit-redeemer": "救贖者",
+    "explicit-warlord": "總督軍",
+    "explicit-delve": "掘獄",
+    "explicit-veiled": "隱匿",
+    "explicit-incursion": "時空穿越",
     "Roll is not variable": "數值不可變",
     "Elemental damage is not the main source of DPS": "元素傷害不是主要DPS來源",
     "Physical damage is not the main source of DPS": "物理傷害不是主要DPS來源",

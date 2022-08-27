@@ -9,6 +9,8 @@
         :filter="filters.areaLevel" name="Area Level:" />
       <filter-btn-numeric v-if="filters.heistWingsRevealed"
         :filter="filters.heistWingsRevealed" name="Wings Revealed:" />
+      <filter-btn-numeric v-if="filters.sentinelCharge"
+        :filter="filters.sentinelCharge" name="Charge:" />
       <filter-btn-logical v-if="filters.mapBlighted" readonly
         :filter="{ disabled: false }" :text="filters.mapBlighted.value" />
       <filter-btn-logical v-if="filters.discriminator" readonly
@@ -33,6 +35,8 @@
         :filter="filters.unidentified" text="Unidentified" />
       <filter-btn-logical v-if="filters.veiled"
         :filter="filters.veiled" text="Veiled" />
+      <filter-btn-logical v-if="filters.relic"
+        :filter="filters.relic" text="Relic Unique" />
       <filter-btn-logical v-if="filters.mirrored" active
         :filter="filters.mirrored" :text="filters.mirrored.disabled ? 'Not Mirrored' : 'Mirrored'" />
       <filter-btn-logical v-if="hasStats"
@@ -61,10 +65,12 @@
           :item="item"
           :show-sources="showFilterSources"
           @submit="handleStatsSubmit" />
-        <div v-if="!filteredStats.length && !item.unknownModifiers.length"
+        <div v-if="!filteredStats.length && !showUnknownMods"
           class="border-b border-gray-700 py-2">{{ t('No relevant stats were found') }}</div>
-        <unknown-modifier v-for="stat of item.unknownModifiers" :key="stat.type + '/' + stat.text"
-          :stat="stat" />
+        <template v-if="showUnknownMods">
+          <unknown-modifier v-for="stat of item.unknownModifiers" :key="stat.type + '/' + stat.text"
+            :stat="stat" />
+        </template>
         <input type="submit" class="hidden" />
       </form>
       <div class="flex gap-x-4">
@@ -72,8 +78,8 @@
           >{{ t('Collapse') }} <i class="fas fa-chevron-up pl-1 text-xs text-gray-600"></i></button>
         <ui-toggle v-if="filteredStats.length != stats.length"
           v-model="showHidden" class="text-gray-400 pt-2">{{ t('Hidden') }}</ui-toggle>
-        <!-- <ui-toggle
-          v-model="showFilterSources" class="ml-auto text-gray-400 pt-2">{{ t('Mods') }}</ui-toggle> -->
+        <ui-toggle
+          v-model="showFilterSources" class="ml-auto text-gray-400 pt-2">{{ t('Mods') }}</ui-toggle>
       </div>
     </div>
   </div>
@@ -87,7 +93,7 @@ import FilterBtnNumeric from './FilterBtnNumeric.vue'
 import FilterBtnLogical from './FilterBtnLogical.vue'
 import UnknownModifier from './UnknownModifier.vue'
 import { ItemFilters, StatFilter } from './interfaces'
-import { ParsedItem, ItemRarity } from '@/parser'
+import { ParsedItem, ItemRarity, ItemCategory } from '@/parser'
 
 export default defineComponent({
   name: 'FiltersBlock',
@@ -126,6 +132,11 @@ export default defineComponent({
       statsVisibility.disabled = false
     })
 
+    const showUnknownMods = computed(() =>
+      props.item.unknownModifiers.length &&
+      props.item.category !== ItemCategory.Sentinel
+    )
+
     const { t } = useI18n()
 
     return {
@@ -143,9 +154,10 @@ export default defineComponent({
           return props.stats.filter(s => !s.hidden)
         }
       }),
+      showUnknownMods,
       hasStats: computed(() =>
         props.stats.length ||
-        (props.item.unknownModifiers.length && props.item.rarity === ItemRarity.Unique) ||
+        (showUnknownMods.value && props.item.rarity === ItemRarity.Unique) ||
         props.presets.length > 1),
       handleStatsSubmit () {
         ctx.emit('submit')
