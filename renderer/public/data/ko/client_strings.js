@@ -62,7 +62,7 @@ export default {
   HEIST_BLUEPRINT_GEMS: '특이한 젬',
   HEIST_BLUEPRINT_REPLICAS: '모조품 또는 실험적 아이템',
   MIRRORED: '복제',
-  MODIFIER_LINE: /^(?<type>[^"]+)(?:\s+"(?<name>[^"]+)")?(?:\s+\((지도 등급|등급): (?<tier>\d+)\))?(?:\s+\((등급): (?<rank>\d+)\))?$/,
+  MODIFIER_LINE: /^(?<type>[^"]+)(?:\s+"(?<name>[^"]+)")?(?:\s+\((지도 등급|등급): (?<tier>\d+)\))?(?:\s+\((등급|단계): (?<rank>\d+)\))?$/,
   PREFIX_MODIFIER: '접두어 속성 부여',
   SUFFIX_MODIFIER: '접미어 속성 부여',
   CRAFTED_PREFIX: '대가 제작 접두어 속성 부여',

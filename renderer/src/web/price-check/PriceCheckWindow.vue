@@ -128,10 +128,11 @@ export default defineComponent({
       advancedCheck.value = e.lockedMode
       try {
         const parsed = parseClipboard(e.clipboard)
-        if (parsed != null && (
-          (parsed.category === ItemCategory.HeistContract && parsed.rarity !== ItemRarity.Unique) ||
-          (parsed.category === ItemCategory.Sentinel && parsed.rarity !== ItemRarity.Unique)
-        )) {
+        // if (parsed != null && (
+        //   (parsed.category === ItemCategory.HeistContract && parsed.rarity !== ItemRarity.Unique) ||
+        //   (parsed.category === ItemCategory.Sentinel && parsed.rarity !== ItemRarity.Unique)
+        // )) {
+        if (parsed == null) {
           throw new Error('UNKNOWN_ITEM')
         } else {
           item.value = parsed
